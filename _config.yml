@@ -1,6 +1,7 @@
 title: "NAIRR Teaching Innovation Accelerator"
 description: "A week-long accelerator helping instructors build courses with real HPC-based assignments, using Claude to do the heavy lifting."
 markdown: kramdown
+baseurl: "/nairr-teaching-innovation"
 
 defaults:
   - scope:
