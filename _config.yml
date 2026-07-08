@@ -1,8 +1,9 @@
 title: "NAIRR Teaching Innovation Accelerator"
 description: "A week-long accelerator helping instructors build courses with real HPC-based assignments, using Claude to do the heavy lifting."
-theme: jekyll-theme-minimal   # swap for any GitHub Pages-supported theme
 markdown: kramdown
 
-header_pages:
-  - agenda.md
-  - modules.md
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

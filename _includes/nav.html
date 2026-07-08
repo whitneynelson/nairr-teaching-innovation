@@ -1,0 +1,10 @@
+<nav class="tab-nav">
+  <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+  <a href="{{ '/pre-event.html' | relative_url }}" {% if page.url contains 'pre-event' %}class="active"{% endif %}>Pre-Event</a>
+  <a href="{{ '/day-1.html' | relative_url }}" {% if page.url contains 'day-1' %}class="active"{% endif %}>Day 1</a>
+  <a href="{{ '/day-2.html' | relative_url }}" {% if page.url contains 'day-2' %}class="active"{% endif %}>Day 2</a>
+  <a href="{{ '/day-3.html' | relative_url }}" {% if page.url contains 'day-3' %}class="active"{% endif %}>Day 3</a>
+  <a href="{{ '/day-4.html' | relative_url }}" {% if page.url contains 'day-4' %}class="active"{% endif %}>Day 4</a>
+  <a href="{{ '/day-5.html' | relative_url }}" {% if page.url contains 'day-5' %}class="active"{% endif %}>Day 5</a>
+  <a href="{{ '/departure.html' | relative_url }}" {% if page.url contains 'departure' %}class="active"{% endif %}>Departure</a>
+</nav>
