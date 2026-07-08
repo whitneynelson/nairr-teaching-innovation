@@ -25,21 +25,31 @@ title: Day 1
 
 You're not starting from a blank repo; you're using a pre-built template. For each of `course-site` (public) and `course-toolkit` (private):
 
+#### 1. Create your repos from the template
+
 1. Go to the template repos: [github.com/whitneynelson/course-site](https://github.com/whitneynelson/course-site) and [github.com/whitneynelson/course-toolkit](https://github.com/whitneynelson/course-toolkit)
 2. Click the green **"Use this template"** button → **"Create a new repository"**
 3. Name it whatever you'll actually use going forward
 4. Set visibility: `course-site` → **Public**, `course-toolkit` → **Private**
-5. Clone both locally, side by side:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/your-course-site.git
-   git clone https://github.com/YOUR-USERNAME/your-course-toolkit.git
-   ```
 
-Then connect **Claude Code**, the extension that lets you talk to Claude directly inside your editor:
+#### 2. Clone both locally
+
+```bash
+git clone https://github.com/YOUR-USERNAME/your-course-site.git
+git clone https://github.com/YOUR-USERNAME/your-course-toolkit.git
+```
+
+Open both folders side by side in your editor.
+
+#### 3. Connect Claude Code
+
+Claude Code is the extension that lets you talk to Claude directly inside your editor:
 
 - **VS Code:** Extensions view (`Cmd+Shift+X` / `Ctrl+Shift+X`) → search "Claude Code" → install → sign in.
 - **Antigravity:** same shortcut → install "Claude Code" from Open VSX → sign in (an API key is the more reliable fallback right now).
 - **Either editor, if the extension won't connect:** `npm install -g @anthropic-ai/claude-code`, then run `claude` in your terminal.
+
+#### 4. Send a test prompt
 
 Once connected, send one test prompt; coders can ask Claude to explain a file in the repo, non-coders can ask it to write a one-line Slurm script and explain what it does.
 

@@ -14,15 +14,15 @@ Everything below is account setup and software installs; no coding required yet.
 
 ## Schedule
 
-| Time | Session | Notes |
-|:---|:---|:---|
-| **Before Jul 20** | Request your Morehouse Supercomputing Facility account; set up MFA (Duo/Okta). Download Git, and an IDE (VS Code or Antigravity) | Request access at [bpccenter.org/current-programs/cbpc-hpc-resources](https://www.bpccenter.org/current-programs/cbpc-hpc-resources) with your .edu email; approval can take a few business days |
-| **Before Jul 24** | Verify NAIRR/Tapis tenant login; confirm Zoom + cohort Slack/Teams | Needed for Day 2 panel |
-| **Before Jul 26** | Create a free GitHub account (or confirm your institution's GitHub Education org) | Needed for Day 1 |
-| **Before Jul 26** | Create a free Calendly account (optional) | Needed for Day 3 |
-| **Before Jul 26** | Upload your current syllabus (or a model syllabus), plus your institution's syllabus policy checklist, to the shared drive | Used Day 2 for the syllabus session; if you already have learning outcomes or assignments drafted, bring those too |
-| **Before Jul 26** | Check with your campus LMS admin whether Canva-Blackboard LTI is already enabled, if you want it live this week | Institution-level setting |
-| **6:00 – 7:30 PM, Jul 26** | Optional welcome reception / informal meet-and-greet | Dr. Jordan, Prof. Nelson, Mrs. Dawson |
+| Time | Session |
+|:---|:---|
+| **Before Jul 20** | Request your Morehouse Supercomputing Facility account at [bpccenter.org/current-programs/cbpc-hpc-resources](https://www.bpccenter.org/current-programs/cbpc-hpc-resources) with your .edu email (approval can take a few business days); set up MFA (Duo/Okta). Download Git and an IDE (VS Code or Antigravity) |
+| **Before Jul 24** | Verify NAIRR/Tapis tenant login; confirm Zoom + cohort Slack/Teams |
+| **Before Jul 26** | Create a free GitHub account (or confirm your institution's GitHub Education org) |
+| **Before Jul 26** | Create a free Calendly account (optional) |
+| **Before Jul 26** | Upload your current syllabus (or a model syllabus), plus your institution's syllabus policy checklist, to the shared drive; already have learning outcomes or assignments drafted? Bring those too |
+| **Before Jul 26** | Check with your campus LMS admin whether Canva-Blackboard LTI is already enabled, if you want it live this week |
+| **6:00 – 7:30 PM, Jul 26** | Optional welcome reception / informal meet-and-greet, with Dr. Jordan, Prof. Nelson, and Mrs. Dawson |
 
 ## Checklist
 
