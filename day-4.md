@@ -6,6 +6,8 @@ title: Day 4
 
 # Finish the Module + Exams + Office Hours
 
+📊 [Download Day 4 slide deck (.pptx)](slides/day-4-slides.pptx)
+
 ## Schedule
 
 | Time | Session | Lead |
@@ -39,6 +41,12 @@ Draft a midterm scaffold covering your learning outcomes, mixing conceptual and 
 
 Set up your booking link (Calendly or Teams) and write a short office hours policy. Then export Module 4's slide decks and materials to Canva/Blackboard for your LMS, if your campus has Canva–Blackboard LTI enabled.
 
+<div class="card">
+
+**In plain terms:** LTI (Learning Tools Interoperability) is just the technical handshake that lets Canva plug directly into Blackboard — if your campus has it turned on, your slides can go straight from Canva into your course page instead of being downloaded and re-uploaded by hand.
+
+</div>
+
 ### NAIRR/TACC access language
 
 Fill in the syllabus placeholder from Day 2 with the actual language your students need for HPC/TACC access.
@@ -47,8 +55,16 @@ Fill in the syllabus placeholder from Day 2 with the actual language your studen
 
 Close any remaining gaps — confirm your public module page links to everything (slides, assignment, quiz link — not quiz content), and re-check that no answer keys or private prep content leaked into the public file.
 
+## Full module instructions
+
+- [Module 05: Grading Scale & Rubrics](modules/module-05.html)
+- [Module 06: Exam Scaffold](modules/module-06.html)
+- [Module 07: AI for Grading & Attendance](modules/module-07.html) *(optional, self-paced)*
+- [Module 08: Office Hours Setup](modules/module-08.html)
+- [Module 04: Module Builder](modules/module-04.html) — Part 3 today
+
 ## Reference material
 
-- Sample assignments — NAIRR resources: tools & datasets by discipline <span class="coming-soon">Coming soon</span>
+- [Sample assignments — starter ideas by discipline](resources/sample-assignments.html)
 
 Next up: **Day 5** — publish your site and plan what's next.

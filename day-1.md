@@ -6,6 +6,8 @@ title: Day 1
 
 # Set Up — GitHub Course Builder
 
+📊 [Download Day 1 slide deck (.pptx)](slides/day-1-slides.pptx)
+
 ## Schedule
 
 | Time | Session | Lead |
@@ -52,8 +54,14 @@ Once connected, send one test prompt — coders can ask Claude to explain a file
 
 Draft 3–5 learning outcomes for your course — at least one should involve using HPC resources. For each, note how it'll be assessed (assignment, quiz, exam) and whether it's HPC-based. You don't need the technical details of the HPC assignment yet, just the flag — that gets built out on Day 2 and 3.
 
+## Full module instructions
+
+- [Module 00–01: Set Up Your Repos & Environment](modules/module-00-01.html) — includes full troubleshooting (GitHub tokens, credential errors, extension issues)
+- [Module 02: Learning Outcomes → Curriculum Map](modules/module-02.html) — outcomes portion starts today
+
 ## Reference material
 
-- Full setup walkthrough with troubleshooting (GitHub tokens, credential errors, extension issues): available in your `course-site` repo's Builder Guide once created
+- [Setup: Git, VS Code/Antigravity, and TACC](resources/setup-git-vscode-tacc.html)
+- [Git basics + cheat sheet](resources/git-basics.html)
 
 Next up: **Day 2** — curriculum map, syllabus draft, and HPC acclimation begins.

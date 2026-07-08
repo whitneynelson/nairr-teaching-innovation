@@ -6,6 +6,8 @@ title: Day 3
 
 # Claude for Calculations, Grading Scale, Office Hours + Module Builder Continues
 
+📊 [Download Day 3 slide deck (.pptx)](slides/day-3-slides.pptx)
+
 ## Schedule
 
 | Time | Session | Lead |
@@ -36,10 +38,20 @@ This session is the technical backbone for the assignment you're building supple
 
 Hands-on: launch an interactive Jupyter session via `idev`, submit it, and learn to read job output and monitor status.
 
+<div class="card">
+
+**In plain terms:** `idev` starts an interactive session on the supercomputer — like getting your own temporary terminal on the big machine instead of just submitting a job and waiting. Useful for testing something quickly before running it at full scale.
+
+</div>
+
+## Full module instructions
+
+- [Module 04: Module Builder](modules/module-04.html) — Part 2 today
+
 ## Reference material
 
 - [TAPIS workflows reference](https://ashleyscruse.github.io/nairr-research/03-Compute/05-tapis-workflows/)
-- Walkthrough: copying, transferring, and running scripts on large datasets with TACC <span class="coming-soon">Coming soon</span>
-- Finding domain datasets + building a computational plan/data workflow with AI <span class="coming-soon">Coming soon</span>
+- [Moving data onto TACC: copying, transferring, and running scripts on large datasets](resources/moving-data-tacc.html)
+- [Dataset discovery: finding domain datasets + building a computational plan/data workflow with AI](resources/dataset-discovery.html)
 
 Next up: **Day 4** — grading scale, exam scaffold, and office hours.

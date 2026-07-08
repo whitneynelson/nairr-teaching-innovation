@@ -6,6 +6,8 @@ title: Day 2
 
 # HPC Acclimation + Curriculum Map
 
+📊 [Download Day 2 slide deck (.pptx)](slides/day-2-slides.pptx)
+
 ## Schedule
 
 | Time | Session | Lead |
@@ -40,6 +42,18 @@ Pick **one module** from your curriculum map to build fully, end to end — this
 ### HPC Acclimation, Module 1: Getting acclimated via Tapis
 
 Hands-on introduction to accessing HPC resources via Tapis.
+
+<div class="card">
+
+**In plain terms:** Tapis is the layer that lets you (and your students) run jobs on TACC's supercomputers without needing to manage the underlying infrastructure directly — think of it as the interface between "I want to run this script" and the actual hardware.
+
+</div>
+
+## Full module instructions
+
+- [Module 02: Learning Outcomes → Curriculum Map](modules/module-02.html) — curriculum map portion
+- [Module 03: Draft Your Syllabus](modules/module-03.html)
+- [Module 04: Module Builder](modules/module-04.html) — Part 1 today
 
 ## Reference material
 

@@ -6,6 +6,8 @@ title: Day 5
 
 # Publish, Share, Plan, and Sustain
 
+📊 [Download Day 5 slide deck (.pptx)](slides/day-5-slides.pptx)
+
 ## Schedule
 
 | Time | Session | Lead |
@@ -32,6 +34,11 @@ Confirm both `course-site` and `course-toolkit` are set as GitHub template repos
 ### 90-day implementation plan
 
 Note which toolkit artifacts are still pending, and what department or institutional buy-in you still need.
+
+## Full module instructions
+
+- [Module 09: Publish Your Course Site](modules/module-09.html)
+- [Module 10: Reuse This Template](modules/module-10.html)
 
 ## Before you leave
 

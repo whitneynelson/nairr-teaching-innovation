@@ -6,6 +6,12 @@ title: Home
 
 A week-long accelerator (July 27–31) for instructors who want to build courses with real HPC-based assignments — without needing to already know how to code.
 
+<div class="card">
+
+**In plain terms:** "HPC" (high-performance computing) just means a supercomputer — a much more powerful shared machine than your laptop, used for tasks too big or slow to run locally. By the end of this week, your course will have at least one assignment that uses one.
+
+</div>
+
 ## Who this is for
 
 Open to instructors across every discipline and skill level:
@@ -23,6 +29,8 @@ Everyone leaves the week with two things: a public course site and a private ins
 
 Everything for the week lives under the tabs above — **Pre-Event** through **Departure**, one per day. Each day's page has that day's schedule *and* everything you need to build alongside it: no separate links to track down.
 
+📊 [Download the full program overview (.pptx, one-slide timeline)](slides/program-overview-onepager.pptx) — and each day's tab has its own slide deck for that day's sessions. Downloaded a `.pptx`? Upload it to Google Drive and double-click it, or use **File → Open with → Google Slides**, to edit it as a native Slides deck.
+
 By Friday afternoon, your course site is public, your instructor toolkit is private and complete, and you have a 90-day plan for what comes next.
 
 ## Before you arrive
@@ -35,3 +43,18 @@ By Friday afternoon, your course site is public, your instructor toolkit is priv
 </ul>
 
 Full pre-event checklist and timing: see the **Pre-Event** tab above.
+
+## All Builder Guide modules
+
+Each day's tab links the modules relevant to that day, but here's the full set if you want to browse ahead or revisit one later:
+
+1. [Set Up Your Repos & Environment](modules/module-00-01.html)
+2. [Learning Outcomes → Curriculum Map](modules/module-02.html)
+3. [Draft Your Syllabus](modules/module-03.html)
+4. [Module Builder](modules/module-04.html)
+5. [Grading Scale & Rubrics](modules/module-05.html)
+6. [Exam Scaffold](modules/module-06.html)
+7. [AI for Grading & Attendance](modules/module-07.html) *(optional)*
+8. [Office Hours Setup](modules/module-08.html)
+9. [Publish Your Course Site](modules/module-09.html)
+10. [Reuse This Template](modules/module-10.html)

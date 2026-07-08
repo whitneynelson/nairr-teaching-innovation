@@ -6,6 +6,12 @@ title: Pre-Event
 
 # Before You Arrive
 
+<div class="card">
+
+**In plain terms:** everything below is just account setup and software installs — no coding required yet. "MFA" is the second login step (a phone app confirming it's you); an "IDE" is just the program you'll write and edit files in. See [Setup: Git, VS Code, TACC](resources/setup-git-vscode-tacc.html) for the full walkthrough if any of this is new to you.
+
+</div>
+
 ## Schedule
 
 | Time | Session | Lead | Notes |
@@ -31,7 +37,7 @@ title: Pre-Event
 
 ## Reference material
 
-- Installing Git, VS Code/Antigravity, and logging onto TACC from a PC <span class="coming-soon">Coming soon</span>
-- Git basics + cheat sheet <span class="coming-soon">Coming soon</span>
+- [Installing Git, VS Code/Antigravity, and logging onto TACC](resources/setup-git-vscode-tacc.html)
+- [Git basics + cheat sheet](resources/git-basics.html)
 
 Next up: **Day 1** — set up your course-builder repos.
