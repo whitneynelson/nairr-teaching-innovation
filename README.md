@@ -1,6 +1,6 @@
 # nairr-teaching-innovation
 
-**This repo is PUBLIC.** It's the front door for the NAIRR Teaching Innovation Accelerator — published via GitHub Pages, branded for Morehouse College / the Center for Broadening Participation.
+**This repo is PUBLIC.** It's the front door for the NAIRR Teaching Innovation Accelerator; published via GitHub Pages, branded for Morehouse College / the Center for Broadening Participation.
 
 ## What's in here
 
@@ -13,7 +13,7 @@
 | `assets/images/cbpc-logo.png` | Center for Broadening Participation logo |
 | `index.md` | Program overview |
 | `pre-event.md` | Pre-event checklist |
-| `day-1.md` … `day-5.md` | Each day's schedule, Builder Guide content for that day, and reference material — everything a participant needs for that day in one place |
+| `day-1.md` … `day-5.md` | Each day's schedule, Builder Guide content for that day, and reference material; everything a participant needs for that day in one place |
 | `departure.md` | Departure checklist |
 
-This is the site for the accelerator program itself — separate from `course-site`, which is the template each participant uses to build their own course during the week. Items marked "Coming soon" on the day pages are real gaps in the source material (tracked internally), not broken links.
+This is the site for the accelerator program itself; separate from `course-site`, which is the template each participant uses to build their own course during the week. Items marked "Coming soon" on the day pages are real gaps in the source material (tracked internally), not broken links.

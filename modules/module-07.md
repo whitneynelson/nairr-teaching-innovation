@@ -4,15 +4,9 @@ title: "Module 07: AI for Grading and Attendance (Optional)"
 
 # Module 07: AI for Grading & Attendance
 
-**Optional, self-paced** — not scheduled as a live session this cohort.
+**Optional, self-paced**; not scheduled as a live session this cohort. This module isn't part of the live agenda, but the content is here if you want to work through it on your own, before or after the accelerator.
 
-<div class="card">
-
-**In plain terms:** this module isn't part of the live agenda, but the content is here if you want to work through it on your own, before or after the accelerator.
-
-</div>
-
-## Ground rules — read this first
+## Ground rules; read this first
 
 Never paste identifiable student data into Claude without de-identifying it first: name, ID, email removed or replaced with a placeholder. This is a hard line, not a preference.
 
@@ -22,7 +16,7 @@ Draft reusable feedback prompt templates for common assignment issues into `cour
 
 ## Step 2: Attendance pattern template
 
-Draft `attendance-pattern-template.md` — a way to spot engagement trends without exposing individual student records in the process.
+Draft `attendance-pattern-template.md`; a way to spot engagement trends without exposing individual student records in the process.
 
 ## Checkpoint
 
@@ -32,4 +26,4 @@ Draft `attendance-pattern-template.md` — a way to spot engagement trends witho
 <li><code>attendance-pattern-template.md</code> drafted</li>
 </ul>
 
-Next: [Module 08 — Office Hours Setup](module-08.html)
+Next: [Module 08: Office Hours Setup](module-08.html)

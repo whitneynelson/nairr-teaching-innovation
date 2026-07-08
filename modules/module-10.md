@@ -6,11 +6,7 @@ title: "Module 10: Reuse This Template"
 
 *Feeds: Day 5, 10:15–11:00 AM (shared block with Module 09)*
 
-<div class="card">
-
-**In plain terms:** the actual "duplicate the repo" step takes about 5 minutes — most of the value here is in thinking through what carries over.
-
-</div>
+The actual "duplicate the repo" step takes about 5 minutes; most of the value here is in thinking through what carries over.
 
 ## Step 1: Confirm both repos are set as templates
 
@@ -36,4 +32,4 @@ Flag which toolkit artifacts you'd reuse as-is vs. rebuild.
 <li>Clear on what carries over vs. rebuilds for next use</li>
 </ul>
 
-This is the last module — congratulations, both repos are built and your course site is live.
+This is the last module; congratulations, both repos are built and your course site is live.

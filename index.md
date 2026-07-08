@@ -4,13 +4,18 @@ title: Home
 
 # NAIRR Teaching Innovation Accelerator
 
-A week-long accelerator (July 27–31) for instructors who want to build courses with real HPC-based assignments — without needing to already know how to code.
+A week-long accelerator (July 27-31) for instructors who want to build courses with real HPC-based assignments, no prior coding experience required.
 
 <div class="card">
 
-**In plain terms:** "HPC" (high-performance computing) just means a supercomputer — a much more powerful shared machine than your laptop, used for tasks too big or slow to run locally. By the end of this week, your course will have at least one assignment that uses one.
+HPC ("high-performance computing") is a supercomputer; a much more powerful shared machine than your laptop, used for tasks too big or slow to run locally. By the end of this week, your course will have at least one assignment that uses one.
 
 </div>
+
+## Program team
+
+**Instructors:** Dr. Rene Jordan, Prof. Whitney Nelson
+**Coordinator:** Mrs. Cerrice Dawson
 
 ## Who this is for
 
@@ -23,20 +28,22 @@ Open to instructors across every discipline and skill level:
 
 </div>
 
-Everyone leaves the week with two things: a public course site and a private instructor toolkit, both built and ready to publish.
+Already teaching a version of this course? Bring what you have; upload or paste your existing syllabus, learning outcomes, or assignments at any point this week, and Claude will adapt them instead of you starting from a blank template.
+
+Everyone leaves the week with two things: a public course site and a private instructor toolkit, both fully built. Publishing the course site via GitHub Pages is one option for sharing it; you can just as easily hand the finished material off to Google Classroom, Canvas, Blackboard, or whatever your institution already uses.
 
 ## How to use this site
 
-Everything for the week lives under the tabs above — **Pre-Event** through **Departure**, one per day. Each day's page has that day's schedule *and* everything you need to build alongside it: no separate links to track down.
+Everything for the week lives under the tabs above; **Pre-Event** through **Departure**, one per day. Each day's page has that day's schedule and everything you need to build alongside it, no separate links to track down.
 
-📊 [Download the full program overview (.pptx, one-slide timeline)](slides/program-overview-onepager.pptx) — and each day's tab has its own slide deck for that day's sessions. Downloaded a `.pptx`? Upload it to Google Drive and double-click it, or use **File → Open with → Google Slides**, to edit it as a native Slides deck.
+📊 [Download the full program slide deck (.pptx)](slides/full-program-deck.pptx); one deck covering the program overview and all five days. Upload it to Google Drive and double-click it, or use **File → Open with → Google Slides**, to edit it as a native Slides deck.
 
-By Friday afternoon, your course site is public, your instructor toolkit is private and complete, and you have a 90-day plan for what comes next.
+By Friday afternoon, your course site is complete, your instructor toolkit is private and complete, and you have a 90-day plan for what comes next.
 
 ## Before you arrive
 
 <ul class="checklist">
-<li>Create your TACC account and set up MFA</li>
+<li>Create your Morehouse Supercomputing Facility account and set up MFA</li>
 <li>Install Git and an IDE (VS Code or Antigravity)</li>
 <li>Create a free GitHub account</li>
 <li>Bring your current syllabus (or use the model syllabus provided) plus your institution's syllabus policy checklist</li>
@@ -58,3 +65,4 @@ Each day's tab links the modules relevant to that day, but here's the full set i
 8. [Office Hours Setup](modules/module-08.html)
 9. [Publish Your Course Site](modules/module-09.html)
 10. [Reuse This Template](modules/module-10.html)
+</content>

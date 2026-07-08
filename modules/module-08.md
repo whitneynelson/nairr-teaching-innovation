@@ -6,11 +6,7 @@ title: "Module 08: Office Hours Setup"
 
 *Feeds: Day 4, 1:30–2:00 PM*
 
-<div class="card">
-
-**In plain terms:** if you already set up Calendly before the event, don't spend the whole 30 minutes here — jump to the Canva/Blackboard export part.
-
-</div>
+If you already set up Calendly before the event, don't spend the whole 30 minutes here; jump to the Canva/Blackboard export part.
 
 ## Step 1: Set up your booking link
 
@@ -37,4 +33,4 @@ This is where slide decks and other visual materials built in [Module 04](module
 <li>Canva/Blackboard export tested, or flagged as pending institutional setup</li>
 </ul>
 
-Next: [Module 09 — Publish Your Course Site](module-09.html)
+Next: [Module 09: Publish Your Course Site](module-09.html)

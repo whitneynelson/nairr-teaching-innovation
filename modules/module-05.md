@@ -6,11 +6,7 @@ title: "Module 05: Grading Scale and Rubrics"
 
 *Feeds: Day 4, 10:15–10:30 AM*
 
-<div class="card">
-
-**In plain terms:** a short session — it's fine to set the direction here and finish the details independently, especially the AI-use rubric, which deserves real thought.
-
-</div>
+A short session; it's fine to set the direction here and finish the details independently, especially the AI-use rubric, which deserves real thought.
 
 ## Step 1: Draft the grading scale
 
@@ -20,7 +16,7 @@ Fill in `course-toolkit/grading-scale.md`.
 
 ## Step 2: Build the assignment rubric template
 
-`rubrics/assignment-rubric-template.md` — a reusable rubric shape, not a rubric for one specific assignment.
+`rubrics/assignment-rubric-template.md`; a reusable rubric shape, not a rubric for one specific assignment.
 
 ## Step 3: Build the AI-use rubric
 
@@ -39,4 +35,4 @@ Since assignments involve Claude either writing code (coders) or generating it f
 <li><code>rubrics/ai-use-rubric-template.md</code> drafted with separate criteria for coder vs. non-coder use of Claude</li>
 </ul>
 
-Next: [Module 06 — Exam Scaffold](module-06.html)
+Next: [Module 06: Exam Scaffold](module-06.html)

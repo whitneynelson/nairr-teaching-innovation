@@ -4,33 +4,32 @@ title: Day 1
 
 <span class="day-pill">Day 1 · Monday, July 27</span>
 
-# Set Up — GitHub Course Builder
-
-📊 [Download Day 1 slide deck (.pptx)](slides/day-1-slides.pptx)
+# Set Up | GitHub Course Builder
 
 ## Schedule
 
-| Time | Session | Lead |
-|:---|:---|:---|
-| 9:30 – 10:00 AM | Arrival, coffee, informal networking | — |
-| 10:00 – 10:30 AM | Welcome from TACC, daily agenda review & introductions | Dr. Jordan |
-| 10:30 – 12:30 PM | What is NAIRR? A tour of the ecosystem. Set up your course-builder repos: GitHub + GitHub Pages | Whitney |
-| 12:30 – 1:30 PM | Lunch | |
-| 1:30 – 2:00 PM | What goes into AI & a shared repo — what's safe, what's not | Dr. Jordan |
-| 2:00 – 2:15 PM | Scale-first design: creating assignments & courses for HPC — why HPC? | Whitney |
-| 2:15 – 3:00 PM | Creating and mapping your learning outcomes | Independent |
-| Evening | All White Party | Ms. Dawson |
+| Time | Session |
+|:---|:---|
+| 9:30 – 10:00 AM | Arrival, coffee, informal networking |
+| 10:00 – 10:30 AM | Welcome, daily agenda review & introductions |
+| 10:30 – 12:30 PM | What is NAIRR? A tour of the ecosystem. Set up your course-builder repos: GitHub + GitHub Pages |
+| 12:30 – 1:30 PM | Lunch |
+| 1:30 – 2:00 PM | What goes into AI & a shared repo; what's safe, what's not |
+| 2:00 – 2:15 PM | Scale-first design: creating assignments & courses for HPC; why HPC? |
+| 2:15 – 3:00 PM | Creating and mapping your learning outcomes |
+| Evening | All White Party |
 
 ## What you'll build today
 
 ### Set up your two repos & environment
 
-You're not starting from a blank repo — you're using a pre-built template. For each of `course-site` (public) and `course-toolkit` (private):
+You're not starting from a blank repo; you're using a pre-built template. For each of `course-site` (public) and `course-toolkit` (private):
 
-1. Click the green **"Use this template"** button → **"Create a new repository"**
-2. Name it whatever you'll actually use going forward
-3. Set visibility: `course-site` → **Public**, `course-toolkit` → **Private**
-4. Clone both locally, side by side:
+1. Go to the template repos: [github.com/whitneynelson/course-site](https://github.com/whitneynelson/course-site) and [github.com/whitneynelson/course-toolkit](https://github.com/whitneynelson/course-toolkit)
+2. Click the green **"Use this template"** button → **"Create a new repository"**
+3. Name it whatever you'll actually use going forward
+4. Set visibility: `course-site` → **Public**, `course-toolkit` → **Private**
+5. Clone both locally, side by side:
    ```bash
    git clone https://github.com/YOUR-USERNAME/your-course-site.git
    git clone https://github.com/YOUR-USERNAME/your-course-toolkit.git
@@ -42,26 +41,32 @@ Then connect **Claude Code**, the extension that lets you talk to Claude directl
 - **Antigravity:** same shortcut → install "Claude Code" from Open VSX → sign in (an API key is the more reliable fallback right now).
 - **Either editor, if the extension won't connect:** `npm install -g @anthropic-ai/claude-code`, then run `claude` in your terminal.
 
-Once connected, send one test prompt — coders can ask Claude to explain a file in the repo; non-coders can ask it to write a one-line Slurm script and explain what it does.
+Once connected, send one test prompt; coders can ask Claude to explain a file in the repo, non-coders can ask it to write a one-line Slurm script and explain what it does.
 
 <div class="card">
 
-**The whole point of this week:** you don't need to already know Slurm, Python, or bash to build an HPC-based assignment. You need to know what you want the assignment to *do* — Claude handles the syntax, whether you're writing code yourself or asking for it in plain English.
+You don't need to already know Slurm, Python, or bash to build an HPC-based assignment this week. You need to know what you want the assignment to *do*; Claude handles the syntax, whether you're writing code yourself or asking for it in plain English.
 
 </div>
 
+### Why repo structure matters
+
+The two folders you just created aren't just storage; they're the environment Claude works inside all week, and a well-organized one makes every prompt you write from here forward more effective. Notice that `course-site` already ships with a `CLAUDE.md` (root instructions for how Claude should operate in that repo) and a `skills/` folder (step-by-step guides Claude reads before walking you through each module). That's deliberate: a README stating intent, docs explaining decisions, and clear guardrails give Claude the same context a new collaborator would need, so it plans and writes better code with less back-and-forth. Keep that same discipline as you build out your own course content this week; the more your repo documents itself, the less you'll have to re-explain to Claude in every session.
+
 ### Draft your learning outcomes
 
-Draft 3–5 learning outcomes for your course — at least one should involve using HPC resources. For each, note how it'll be assessed (assignment, quiz, exam) and whether it's HPC-based. You don't need the technical details of the HPC assignment yet, just the flag — that gets built out on Day 2 and 3.
+Draft 3–5 learning outcomes for your course; at least one should involve using HPC resources. For each, note how it'll be assessed (assignment, quiz, exam) and whether it's HPC-based. You don't need the technical details of the HPC assignment yet, just the flag; that gets built out on Day 2 and 3.
+
+Already have learning outcomes drafted for this course? Paste them in and ask Claude to map them against the HPC requirement instead of starting from scratch.
 
 ## Full module instructions
 
-- [Module 00–01: Set Up Your Repos & Environment](modules/module-00-01.html) — includes full troubleshooting (GitHub tokens, credential errors, extension issues)
-- [Module 02: Learning Outcomes → Curriculum Map](modules/module-02.html) — outcomes portion starts today
+- [Module 00–01: Set Up Your Repos & Environment](modules/module-00-01.html); includes full troubleshooting (GitHub tokens, credential errors, extension issues)
+- [Module 02: Learning Outcomes → Curriculum Map](modules/module-02.html); outcomes portion starts today
 
 ## Reference material
 
-- [Setup: Git, VS Code/Antigravity, and TACC](resources/setup-git-vscode-tacc.html)
+- [Setup: Git, VS Code/Antigravity, and Morehouse Supercomputing Facility](resources/setup-git-vscode-tacc.html)
 - [Git basics + cheat sheet](resources/git-basics.html)
 
-Next up: **Day 2** — curriculum map, syllabus draft, and HPC acclimation begins.
+Next up: **Day 2**; curriculum map, syllabus draft, and HPC acclimation begins.

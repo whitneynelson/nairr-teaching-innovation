@@ -2,13 +2,9 @@
 title: Sample Assignments by Discipline
 ---
 
-# Sample Assignments — Tools & Datasets by Discipline
+# Sample Assignments | Tools & Datasets by Discipline
 
-<div class="card">
-
-**In plain terms:** if you're staring at a blank page trying to imagine what an "HPC-based assignment" even looks like in your field, this page is a set of starting points — not a prescription. Adapt, don't adopt wholesale.
-
-</div>
+If you're staring at a blank page trying to imagine what an "HPC-based assignment" even looks like in your field, this page is a set of starting points, not a prescription. Adapt, don't adopt wholesale.
 
 ## How to use this page
 
@@ -31,7 +27,7 @@ Pick the discipline closest to yours, use the sample as a starting prompt for Cl
 
 ## Computer science / data science
 
-- **Sample idea:** students train a model across a parameter grid or on a dataset too large for a laptop, comparing runtime/accuracy tradeoffs across configurations — a natural fit for demonstrating *why* HPC matters, not just how to use it.
+- **Sample idea:** students train a model across a parameter grid or on a dataset too large for a laptop, comparing runtime/accuracy tradeoffs across configurations; a natural fit for demonstrating *why* HPC matters, not just how to use it.
 - **Where data comes from:** Kaggle, Hugging Face Datasets, or your own research data.
 
 ## Humanities / interdisciplinary
@@ -41,6 +37,6 @@ Pick the discipline closest to yours, use the sample as a starting prompt for Cl
 
 ## A framing question worth asking yourself
 
-For any of these: what specifically requires HPC here — scale, speed, or parallelism? If you can't answer that in one sentence, the assignment may work fine on a laptop, and the HPC framing should be applied to a different part of your course instead. This connects to Day 1's "Scale-First Design: Why HPC?" session.
+For any of these: what specifically requires HPC here; scale, speed, or parallelism? If you can't answer that in one sentence, the assignment may work fine on a laptop, and the HPC framing should be applied to a different part of your course instead. This connects to Day 1's "Scale-First Design: Why HPC?" session.
 
 Next: back to [Day 4](../day-4.html).
