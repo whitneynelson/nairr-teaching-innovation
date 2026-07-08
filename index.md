@@ -42,8 +42,6 @@ Everyone leaves the week with two things: a public course site and a private ins
 
 Everything for the week lives under the tabs above; **Pre-Event** through **Departure**, one per day. Each day's page has that day's schedule and everything you need to build alongside it, no separate links to track down.
 
-📊 [Download the full program slide deck (.pptx)](slides/full-program-deck.pptx); one deck covering the program overview and all five days. Upload it to Google Drive and double-click it, or use **File → Open with → Google Slides**, to edit it as a native Slides deck.
-
 By Friday afternoon, your course site is complete, your instructor toolkit is private and complete, and you have a 90-day plan for what comes next.
 
 ## Before you arrive
