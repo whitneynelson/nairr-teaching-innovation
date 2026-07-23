@@ -20,7 +20,7 @@ A week-long accelerator (July 27-31) for instructors who want to build courses w
 
 ## Program team
 
-**Instructors:** Dr. Rene Jordan, Prof. Whitney Nelson
+**Instructors:** Dr. Renée Jordan, Prof. Whitney Nelson
 **Coordinator:** Mrs. Cerrice Dawson
 
 ## Who this is for
