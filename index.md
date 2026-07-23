@@ -4,7 +4,7 @@ title: Home
 
 # NAIRR Teaching Innovation Accelerator
 
-A week-long accelerator (July 27-31) for instructors who want to build courses with real HPC-based assignments, no prior coding experience required.
+A week-long accelerator (July 27-31) for instructors who want to build courses with real HPC & AI based assignments, no prior coding experience required.
 
 ## The week at a glance
 
@@ -20,8 +20,9 @@ A week-long accelerator (July 27-31) for instructors who want to build courses w
 
 ## Program team
 
-**Instructors:** Dr. Renée Jordan, Prof. Whitney Nelson
+**Instructors:** Dr. Renée Jordan, Prof. Whitney Nelson, Dr. Ashley Scruse
 **Coordinator:** Mrs. Cerrice Dawson
+**Program Lead:** Dr. Kinnis Gosha
 
 ## Who this is for
 
@@ -29,8 +30,8 @@ Open to instructors across every discipline and skill level:
 
 <div class="card">
 
-- **If you code**, Claude Code speeds up writing and debugging the scripts your students will run on HPC.
-- **If you don't code**, Claude Code writes those scripts *for* you, in plain English, so you can still build and understand HPC-based assignments without becoming a programmer in the process.
+- **If you code**, AI-powered coding assistants speeds up writing and debugging the scripts your students will run on HPC.
+- **If you don't code**, AI-powered coding assistant writes those scripts *for* you, so you can still build and understand HPC-based assignments without becoming a programmer in the process.
 
 </div>
 
