@@ -29,7 +29,7 @@ Working from yesterday's learning outcomes, sequence your course week by week (o
 
 ### Syllabus draft
 
-A 30-minute session; this produces a *draft skeleton*, not a finished syllabus. Start from your existing syllabus (if you have one) or the model syllabus provided; either way, upload or paste it and Claude will work from what you already have. Pull in your outcomes summary and a link to your schedule. Leave clear placeholders for anything not ready yet (Morehouse Supercomputing Facility access language, grading policy); those get filled in later in the week.
+A 30-minute session; this produces a *draft skeleton*, not a finished syllabus. Start from your existing syllabus (if you have one) or the model syllabus provided; either way, upload or paste it and your AI-powered coding assistant will work from what you already have. Pull in your outcomes summary and a link to your schedule. Leave clear placeholders for anything not ready yet (Morehouse Supercomputing Facility access language, grading policy); those get filled in later in the week.
 
 ### HPC with VISTA: architecture, filesystem, and SSH
 
@@ -43,8 +43,8 @@ Hands-on introduction to accessing HPC resources on the Morehouse Supercomputing
 
 Pick **one module** from your curriculum map to build fully, end to end; this becomes the repeatable pattern you copy for every other module later.
 
-1. Draft a lecture outline from your learning outcome for this module. Already have lecture notes or slides for this module? Bring them, and ask Claude to restructure them into this format rather than starting over.
-2. Build the slide deck; source lives in Canva/Slides (export a PDF once done), or ask Claude to generate one directly if you'd rather work from a script.
+1. Draft a lecture outline from your learning outcome for this module. Already have lecture notes or slides for this module? Bring them, and ask your AI-powered coding assistant to restructure them into this format rather than starting over.
+2. Build the slide deck; source lives in Canva/Slides (export a PDF once done), or ask your AI-powered coding assistant to generate one directly if you'd rather work from a script.
 3. Split public vs. private: the student-facing outline and links go in your public course site; your full prep notes (talking points, timing) stay in your private toolkit.
 
 ## Full module instructions

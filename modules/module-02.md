@@ -12,11 +12,11 @@ A "learning outcome" is just a specific sentence describing what a student shoul
 
 ### Step 1: Draft 3–5 outcomes
 
-Ask Claude to help turn a rough sense of "what I want students to be able to do" into properly scoped outcomes:
+Ask your AI-powered coding assistant to help turn a rough sense of "what I want students to be able to do" into properly scoped outcomes:
 
 > *"Help me write 3-5 learning outcomes for a [course topic] course. Students range from [prior experience]. I want at least one outcome that involves using HPC resources."*
 
-Already have learning outcomes drafted for this course? Paste them in and ask Claude to map them against the HPC requirement instead of starting from scratch.
+Already have learning outcomes drafted for this course? Paste them in and ask your AI-powered coding assistant to map them against the HPC requirement instead of starting from scratch.
 
 ### Step 2: Map each outcome to an assessment
 

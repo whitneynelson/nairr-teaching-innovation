@@ -35,7 +35,7 @@ Open to instructors across every discipline and skill level:
 
 </div>
 
-Already teaching a version of this course? Bring what you have; upload or paste your existing syllabus, learning outcomes, or assignments at any point this week, and Claude will adapt them instead of you starting from a blank template.
+Already teaching a version of this course? Bring what you have; upload or paste your existing syllabus, learning outcomes, or assignments at any point this week, and your AI-powered coding assistant will adapt them instead of you starting from a blank template.
 
 Everyone leaves the week with two things: a public course site and a private instructor toolkit, both fully built. Publishing the course site via GitHub Pages is one option for sharing it; you can just as easily hand the finished material off to Google Classroom, Canvas, Blackboard, or whatever your institution already uses.
 
@@ -44,6 +44,12 @@ Everyone leaves the week with two things: a public course site and a private ins
 Everything for the week lives under the tabs above; **Pre-Event** through **Departure**, one per day. Each day's page has that day's schedule and everything you need to build alongside it, no separate links to track down.
 
 By Friday afternoon, your course site is complete, your instructor toolkit is private and complete, and you have a 90-day plan for what comes next.
+
+## NAIRR Accelerator Cohort 3 Workbook
+
+📘 [Open the NAIRR Accelerator Cohort 3 Workbook](https://docs.google.com/document/d/1BfB6uU4nvRdrNSckx9zLo1qXsc5_kjj4rOJ2ibuGGpg/edit?tab=t.0)
+
+This workbook serves as a companion throughout the accelerator, providing preparation guidance, track-specific resources, daily design activities, reflection opportunities, responsible AI planning tools, and implementation resources to support participants before, during, and after the program.
 
 ## Before you arrive
 

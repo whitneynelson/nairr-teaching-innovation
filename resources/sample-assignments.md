@@ -8,7 +8,7 @@ If you're staring at a blank page trying to imagine what an "HPC-based assignmen
 
 ## How to use this page
 
-Pick the discipline closest to yours, use the sample as a starting prompt for Claude rather than a finished assignment: *"Adapt this assignment idea for a [your course level] course on [your topic], using [your actual dataset if you have one]."*
+Pick the discipline closest to yours, use the sample as a starting prompt for your AI-powered coding assistant rather than a finished assignment: *"Adapt this assignment idea for a [your course level] course on [your topic], using [your actual dataset if you have one]."*
 
 ## Life sciences / biology
 
@@ -33,7 +33,7 @@ Pick the discipline closest to yours, use the sample as a starting prompt for Cl
 ## Humanities / interdisciplinary
 
 - **Sample idea:** large-scale text mining or corpus analysis across a digitized archive too large to process locally (e.g. analyzing word frequency or sentiment trends across a large historical text collection).
-- **Where data comes from:** many humanities archives now publish machine-readable corpora; ask Claude to help identify one for your specific area.
+- **Where data comes from:** many humanities archives now publish machine-readable corpora; ask your AI-powered coding assistant to help identify one for your specific area.
 
 ## A framing question worth asking yourself
 

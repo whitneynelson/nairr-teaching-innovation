@@ -66,7 +66,7 @@ Then run `claude` in your editor's integrated terminal.
 
 ### Using it: coders vs. non-coders
 
-- **If you code:** ask Claude to write, refactor, or debug directly; e.g. *"Refactor this data-loading function to run in parallel across nodes."*
+- **If you code:** ask it to write, refactor, or debug directly; e.g. *"Refactor this data-loading function to run in parallel across nodes."*
 - **If you don't code:** describe what you want in plain language; e.g. *"Write a Slurm batch script that runs my Python script `analyze.py` on 4 nodes for 2 hours, and explain each line so I understand what it's doing."*
 
 Either way works. Building an HPC assignment doesn't require you to already know Slurm, Python, or bash; it requires knowing what you want the assignment to *do*.

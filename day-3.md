@@ -4,7 +4,7 @@ title: Day 3
 
 <span class="day-pill">Day 3 · Wednesday, July 29</span>
 
-# Claude for Calculations, Grading Scale + Module Builder Continues
+# AI for Calculations, Grading Scale + Module Builder Continues
 
 ## Schedule
 
@@ -12,7 +12,7 @@ title: Day 3
 |:---|:---|
 | 10:00 – 10:15 AM | Daily agenda review |
 | 10:15 – 10:30 AM | Dataset discovery for HPC; where to find data in your domain |
-| 10:30 – 11:00 AM | Using Claude for API data extraction, moving data onto HPC |
+| 10:30 – 11:00 AM | Using an AI-powered coding assistant for API data extraction, moving data onto HPC |
 | 11:00 AM – 12:30 PM | Module Builder, Part 2: quiz + assignment supplementary material |
 | 12:30 – 1:30 PM | Lunch |
 | 1:30 – 2:30 PM | HPC Acclimation, Module 2: running your Jupyter notebook via Tapis (idev). Module 3: monitoring jobs & reading output |
@@ -23,15 +23,15 @@ title: Day 3
 
 ### Moving data onto HPC
 
-The technical backbone for the assignment you're about to build supplementary material for: using Claude for API data extraction, then moving that data onto HPC.
+The technical backbone for the assignment you're about to build supplementary material for: using an AI-powered coding assistant for API data extraction, then moving that data onto HPC.
 
 ### Module Builder, Part 2: quiz + assignment material
 
 Continuing the module you started on Day 2:
 
 1. Build the quiz, with a full answer key; this stays in your private toolkit.
-2. Build the assignment's supplementary material (datasets, reference links, setup instructions) into your public course site. If you already have an assignment written for this module, upload or paste it and have Claude adapt it rather than drafting from nothing.
-3. If you code, ask Claude to scaffold the actual assignment notebook/script now. If you don't, describe the assignment goal and dataset and have Claude draft the starter notebook/script *and* a plain-language explanation you can hand to students.
+2. Build the assignment's supplementary material (datasets, reference links, setup instructions) into your public course site. If you already have an assignment written for this module, upload or paste it and have your AI-powered coding assistant adapt it rather than drafting from nothing.
+3. If you code, ask your AI-powered coding assistant to scaffold the actual assignment notebook/script now. If you don't, describe the assignment goal and dataset and have it draft the starter notebook/script *and* a plain-language explanation you can hand to students.
 
 ### HPC Acclimation, Modules 2–3: running Jupyter via Tapis, monitoring jobs
 
@@ -43,7 +43,7 @@ A fast session; set the direction here, finish independently if time runs short.
 
 1. Draft your grading scale and category weighting.
 2. Build a reusable assignment rubric template.
-3. Build an AI-use rubric with separate criteria for coders (did they understand the code Claude helped write?) and non-coders (can they explain what the generated script does?), plus any academic-integrity flags specific to your policy.
+3. Build an AI-use rubric with separate criteria for coders (did they understand the code their AI-powered coding assistant helped write?) and non-coders (can they explain what the generated script does?), plus any academic-integrity flags specific to your policy.
 
 ## Full module instructions
 

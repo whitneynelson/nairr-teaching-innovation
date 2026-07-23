@@ -39,7 +39,7 @@ Globus is a web-based transfer service designed for exactly this: moving large r
 
 ## Running your script once the data is there
 
-Once your data is on the Morehouse Supercomputing Facility, you submit jobs to actually process it; this is what the HPC Acclimation sessions (Modules 1–3 in the Day 2–3 schedule) walk through: `idev` for interactive sessions, `sbatch`/Slurm for batch jobs. If you don't code, describe to Claude what you want the script to do with your (now-uploaded) dataset, and ask it to write the Slurm submission script for you, explained line by line.
+Once your data is on the Morehouse Supercomputing Facility, you submit jobs to actually process it; this is what the HPC Acclimation sessions (Modules 1–3 in the Day 2–3 schedule) walk through: `idev` for interactive sessions, `sbatch`/Slurm for batch jobs. If you don't code, describe to your AI-powered coding assistant what you want the script to do with your (now-uploaded) dataset, and ask it to write the Slurm submission script for you, explained line by line.
 
 ## Common pitfalls
 

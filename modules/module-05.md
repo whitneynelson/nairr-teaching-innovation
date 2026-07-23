@@ -20,10 +20,10 @@ Fill in `course-toolkit/grading-scale.md`.
 
 ## Step 3: Build the AI-use rubric
 
-Since assignments involve Claude either writing code (coders) or generating it from plain-language descriptions (non-coders), your rubric needs criteria that make sense for both:
+Since assignments involve an AI-powered coding assistant either writing code (coders) or generating it from plain-language descriptions (non-coders), your rubric needs criteria that make sense for both:
 
-- Did the student disclose how they used Claude?
-- Coders: did they understand and can they explain the code Claude helped write?
+- Did the student disclose how they used AI?
+- Coders: did they understand and can they explain the code their AI-powered coding assistant helped write?
 - Non-coders: can they explain what the generated script does, even if they didn't write it line-by-line?
 - Any academic integrity flags specific to your policy
 
@@ -32,7 +32,7 @@ Since assignments involve Claude either writing code (coders) or generating it f
 <ul class="checklist">
 <li><code>grading-scale.md</code> has a weighting scheme</li>
 <li><code>rubrics/assignment-rubric-template.md</code> drafted, even roughly</li>
-<li><code>rubrics/ai-use-rubric-template.md</code> drafted with separate criteria for coder vs. non-coder use of Claude</li>
+<li><code>rubrics/ai-use-rubric-template.md</code> drafted with separate criteria for coder vs. non-coder use of AI</li>
 </ul>
 
 Next: [Module 06: Exam Scaffold](module-06.html)

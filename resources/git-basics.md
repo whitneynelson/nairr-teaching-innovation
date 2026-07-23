@@ -6,7 +6,7 @@ title: Git Basics and Cheat Sheet
 
 <div class="card">
 
-Git tracks changes for a whole folder of files instead of one document; it saves snapshots of your work over time, and GitHub is the website that stores those snapshots online so you (and Claude) can access them from anywhere.
+Git tracks changes for a whole folder of files instead of one document; it saves snapshots of your work over time, and GitHub is the website that stores those snapshots online so you (and your AI-powered coding assistant) can access them from anywhere.
 
 </div>
 
@@ -41,7 +41,7 @@ You'll do a version of this loop every time you finish a chunk of work this week
 ## If something goes wrong
 
 - **"Password authentication is not supported"**; GitHub needs a Personal Access Token instead of your password. See the troubleshooting section in [Module 00–01](../modules/module-00-01.html).
-- **Merge conflicts**; unlikely this week since you're mostly working solo in your own repo, but if you see one, stop and ask rather than force-pushing over it; Claude Code can also help you read and resolve a conflict if you paste it in and ask.
+- **Merge conflicts**; unlikely this week since you're mostly working solo in your own repo, but if you see one, stop and ask rather than force-pushing over it; your AI-powered coding assistant can also help you read and resolve a conflict if you paste it in and ask.
 - **Not sure what state you're in**; `git status` is always safe to run and never changes anything. When in doubt, run it first.
 
 Next: back to [Setup](setup-git-vscode-tacc.html), or return to the [Pre-Event](../pre-event.html) checklist.

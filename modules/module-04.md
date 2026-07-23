@@ -18,13 +18,13 @@ Pick **one module** from your curriculum map (`course-site/schedule.md`) to buil
 
 > *"Draft a lecture outline for [module topic], covering [outcome]. Include a short intro, 2-3 core concepts, and a wrap-up tying to the HPC assignment."*
 
-Already have lecture notes or slides for this module? Bring them, and ask Claude to restructure them into this format rather than starting over.
+Already have lecture notes or slides for this module? Bring them, and ask your AI-powered coding assistant to restructure them into this format rather than starting over.
 
 ### Step 2: Build the slide deck
 
 Source lives in Canva or Slides; export a PDF and archive it once done.
-- **If you code:** Claude can also generate a deck directly (e.g. via `pptxgenjs`).
-- **If you don't code:** stick with Canva/Slides; Claude can still help write the outline and speaker notes.
+- **If you code:** your AI-powered coding assistant can also generate a deck directly (e.g. via `pptxgenjs`).
+- **If you don't code:** stick with Canva/Slides; your AI-powered coding assistant can still help write the outline and speaker notes.
 
 ### Step 3: Split public vs. private
 
@@ -42,10 +42,10 @@ In `course-toolkit/quizzes/module-XX-quiz.md`, with a full answer key. Stays pri
 ### Step 5: Build the assignment's supplementary material
 
 In `course-site/resources.md`; datasets, reference links, setup instructions.
-- **If you code:** ask Claude to scaffold the actual assignment notebook/script now.
-- **If you don't code:** describe the assignment goal and dataset and let Claude draft the starter notebook/script *and* a plain-language explanation.
+- **If you code:** ask your AI-powered coding assistant to scaffold the actual assignment notebook/script now.
+- **If you don't code:** describe the assignment goal and dataset and let your AI-powered coding assistant draft the starter notebook/script *and* a plain-language explanation.
 
-Already have an assignment written for this module? Upload or paste it and have Claude adapt it rather than drafting from nothing.
+Already have an assignment written for this module? Upload or paste it and have your AI-powered coding assistant adapt it rather than drafting from nothing.
 
 ## Part 3: Finish building the module (Day 4)
 

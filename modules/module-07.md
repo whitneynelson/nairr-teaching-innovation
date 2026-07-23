@@ -8,7 +8,7 @@ title: "Module 07: AI for Grading and Attendance (Optional)"
 
 ## Ground rules; read this first
 
-Never paste identifiable student data into Claude without de-identifying it first: name, ID, email removed or replaced with a placeholder. This is a hard line, not a preference.
+Never paste identifiable student data into an AI-powered coding assistant without de-identifying it first: name, ID, email removed or replaced with a placeholder. This is a hard line, not a preference.
 
 ## Step 1: Feedback prompt templates
 

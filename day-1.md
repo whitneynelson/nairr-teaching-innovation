@@ -51,11 +51,11 @@ Claude Code is the extension that lets you talk to Claude directly inside your e
 
 #### 4. Send a test prompt
 
-Once connected, send one test prompt; coders can ask Claude to explain a file in the repo, non-coders can ask it to write a one-line Slurm script and explain what it does.
+Once connected, send one test prompt; coders can ask it to explain a file in the repo, non-coders can ask it to write a one-line Slurm script and explain what it does.
 
 <div class="card">
 
-You don't need to already know Slurm, Python, or bash to build an HPC-based assignment this week. You need to know what you want the assignment to *do*; Claude handles the syntax, whether you're writing code yourself or asking for it in plain English.
+You don't need to already know Slurm, Python, or bash to build an HPC-based assignment this week. You need to know what you want the assignment to *do*; your AI-powered coding assistant handles the syntax, whether you're writing code yourself or asking for it in plain English.
 
 </div>
 
@@ -67,7 +67,7 @@ The two folders you just created aren't just storage; they're the environment Cl
 
 Draft 3–5 learning outcomes for your course; at least one should involve using HPC resources. For each, note how it'll be assessed (assignment, quiz, exam) and whether it's HPC-based. You don't need the technical details of the HPC assignment yet, just the flag; that gets built out on Day 2 and 3.
 
-Already have learning outcomes drafted for this course? Paste them in and ask Claude to map them against the HPC requirement instead of starting from scratch.
+Already have learning outcomes drafted for this course? Paste them in and ask your AI-powered coding assistant to map them against the HPC requirement instead of starting from scratch.
 
 ## Full module instructions
 
