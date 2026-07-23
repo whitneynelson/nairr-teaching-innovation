@@ -4,7 +4,7 @@ title: "Module 08: Office Hours Setup"
 
 # Module 08: Office Hours Setup
 
-*Feeds: Day 4, 1:30–2:00 PM*
+*Feeds: Day 5, 10:15–11:00 AM (shared block with Modules 09 and 10)*
 
 If you already set up Calendly before the event, don't spend the whole 30 minutes here; jump to the Canva/Blackboard export part.
 

@@ -4,7 +4,7 @@ title: "Module 04: Module Builder"
 
 # Module 04: Module Builder
 
-*Feeds: Part 1: Day 2, 1:30–3:00 PM · Part 2: Day 3, 10:30–11:30 AM · Part 3: Day 4, 2:30–3:00 PM*
+*Feeds: Part 1: Day 2, 2:30–3:00 PM · Part 2: Day 3, 11:00 AM–12:30 PM · Part 3: Day 4, 2:30–3:00 PM*
 
 This is the module where you build one complete unit of your course; lecture, slides, quiz, and assignment; as a repeatable pattern you'll copy for every other unit later. It's spread across three days on purpose.
 

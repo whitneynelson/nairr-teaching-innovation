@@ -4,7 +4,7 @@ title: "Module 09: Publish Your Course Site"
 
 # Module 09: Publish Your Course Site
 
-*Feeds: Day 5, 10:15–11:00 AM (shared block with Module 10)*
+*Feeds: Day 5, 10:15–11:00 AM (shared block with Modules 08 and 10)*
 
 Publishing via GitHub Pages is one option for sharing your finished course site, not a requirement; you can just as easily export or hand off the material to Google Classroom, Canvas, Blackboard, or whatever LMS your institution already uses. If you do want it live on GitHub Pages, the leak check below is the one step in this whole week you shouldn't rush; it's your last chance to catch anything private before it goes public.
 

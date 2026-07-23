@@ -12,10 +12,10 @@ A week-long accelerator (July 27-31) for instructors who want to build courses w
 |:---|:---|:---|
 | [Pre-Event](pre-event.html) | Sun, Jul 26 | Account setup and software installs |
 | [Day 1](day-1.html) | Mon, Jul 27 | Tour of NAIRR; set up your course-builder repos & environment; draft learning outcomes |
-| [Day 2](day-2.html) | Tue, Jul 28 | Build your curriculum map; draft your syllabus; HPC acclimation begins via Tapis; start your module builder |
-| [Day 3](day-3.html) | Wed, Jul 29 | Dataset discovery; build your quiz and assignment material; run a Jupyter job on HPC |
-| [Day 4](day-4.html) | Thu, Jul 30 | Grading scale and rubrics; exam scaffold; office hours setup |
-| [Day 5](day-5.html) | Fri, Jul 31 | Publish your course site; build your 90-day plan |
+| [Day 2](day-2.html) | Tue, Jul 28 | Build your curriculum map; draft your syllabus; HPC with Vista and Tapis; start your module builder; faculty panels |
+| [Day 3](day-3.html) | Wed, Jul 29 | Dataset discovery; build your quiz and assignment material; run a Jupyter job on HPC; grading scale and rubrics |
+| [Day 4](day-4.html) | Thu, Jul 30 | Case study example; draft your exam scaffold; finish building your module |
+| [Day 5](day-5.html) | Fri, Jul 31 | Publish your course site; office hours setup; build your 90-day plan |
 | [Departure](departure.html) | Sat, Aug 1 | Final checklist and travel home |
 
 ## Program team

@@ -4,40 +4,30 @@ title: Day 4
 
 <span class="day-pill">Day 4 · Thursday, July 30</span>
 
-# Finish the Module + Exams + Office Hours
+# Case Study, Exam Scaffold + Finish the Module
 
 ## Schedule
 
 | Time | Session |
 |:---|:---|
 | 10:00 – 10:15 AM | Daily agenda review |
-| 10:15 – 10:30 AM | Build your grading scale & rubrics |
-| 10:30 – 10:45 AM | Break |
-| 10:45 – 11:30 AM | Draft your exam scaffold |
+| 10:15 – 11:30 AM | Case study example |
 | 11:30 AM – 12:30 PM | FAQs with NotebookLM |
 | 12:30 – 1:30 PM | Lunch |
-| 1:30 – 2:00 PM | Set up office hours via Calendly or Teams. From HPC output to classroom-ready materials: exporting to Canva & Blackboard |
+| 1:30 – 2:00 PM | Draft your exam scaffold |
 | 2:00 – 2:30 PM | Setting up student allocations: Morehouse Supercomputing Facility access language for your syllabus |
 | 2:30 – 3:00 PM | Finish building your module |
-| Evening | Mall trip + farewell dinner |
+| Evening | [Citrus Fusion Cuisine](#evening) |
 
 ## What you'll build today
 
-### Grading scale & rubrics
+### Case study example
 
-A fast session; set the direction here, finish independently if time runs short.
-
-1. Draft your grading scale and category weighting.
-2. Build a reusable assignment rubric template.
-3. Build an AI-use rubric with separate criteria for coders (did they understand the code Claude helped write?) and non-coders (can they explain what the generated script does?), plus any academic-integrity flags specific to your policy.
+A worked example of a full HPC-based course module, start to finish, to ground what you're building this week against a real reference point before you finish your own.
 
 ### Exam scaffold
 
 Draft a midterm scaffold covering your learning outcomes, mixing conceptual and applied questions. Include at least one HPC-literacy question that doesn't require the student to have written code themselves (e.g. reading Slurm job output). Keep the answer key in the same file; this repo is private, so there's no need to hide it.
-
-### Office hours + LMS export
-
-Set up your booking link (Calendly or Teams) and write a short office hours policy. Then export Module 4's slide decks and materials to Canva/Blackboard for your LMS, if your campus has Canva–Blackboard LTI enabled. LTI (Learning Tools Interoperability) is the technical handshake that lets Canva plug directly into Blackboard; if your campus has it turned on, your slides can go straight from Canva into your course page instead of being downloaded and re-uploaded by hand.
 
 ### Morehouse Supercomputing Facility access language
 
@@ -49,14 +39,18 @@ Close any remaining gaps; confirm your public module page links to everything (s
 
 ## Full module instructions
 
-- [Module 05: Grading Scale & Rubrics](modules/module-05.html)
+- [Module 04: Module Builder](modules/module-04.html); Part 3 today
 - [Module 06: Exam Scaffold](modules/module-06.html)
 - [Module 07: AI for Grading & Attendance](modules/module-07.html) *(optional, self-paced)*
-- [Module 08: Office Hours Setup](modules/module-08.html)
-- [Module 04: Module Builder](modules/module-04.html); Part 3 today
 
 ## Reference material
 
 - [Sample assignments; starter ideas by discipline](resources/sample-assignments.html)
+
+## This evening {#evening}
+
+**Citrus Fusion Cuisine** · Av. Alemania, Punta Cana 23000 · (809) 833-4558
+
+Guests are responsible for purchasing their own food and beverages. If you'd like transportation with the group, meet in the lobby of the Royalton Punta Cana Resort & Casino at 5:00 PM.
 
 Next up: **Day 5**; publish your site and plan what's next.

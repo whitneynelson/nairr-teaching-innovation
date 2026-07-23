@@ -4,7 +4,7 @@ title: "Module 10: Reuse This Template"
 
 # Module 10: Reuse This Template
 
-*Feeds: Day 5, 10:15–11:00 AM (shared block with Module 09)*
+*Feeds: Day 5, 10:15–11:00 AM (shared block with Modules 08 and 09)*
 
 The actual "duplicate the repo" step takes about 5 minutes; most of the value here is in thinking through what carries over.
 

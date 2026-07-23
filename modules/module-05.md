@@ -4,7 +4,7 @@ title: "Module 05: Grading Scale and Rubrics"
 
 # Module 05: Grading Scale & Rubrics
 
-*Feeds: Day 4, 10:15–10:30 AM*
+*Feeds: Day 3, 2:30–3:00 PM*
 
 A short session; it's fine to set the direction here and finish the details independently, especially the AI-use rubric, which deserves real thought.
 

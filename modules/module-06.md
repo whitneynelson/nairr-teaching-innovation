@@ -4,7 +4,7 @@ title: "Module 06: Exam Scaffold"
 
 # Module 06: Exam Scaffold
 
-*Feeds: Day 4, 10:45–11:30 AM*
+*Feeds: Day 4, 1:30–2:00 PM*
 
 Everything here goes in your private toolkit, so there's no need to hide the answer key; just keep it organized for your own grading speed later.
 
