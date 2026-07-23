@@ -17,7 +17,7 @@ title: Day 4
 | 1:30 – 2:00 PM | Draft your exam scaffold |
 | 2:00 – 2:30 PM | Setting up student allocations: Morehouse Supercomputing Facility access language for your syllabus |
 | 2:30 – 3:00 PM | Finish building your module |
-| Evening | [Citrus Fusion Cuisine](#evening) |
+| 5:00 PM | [Citrus Fusion Cuisine](#evening) |
 
 ## What you'll build today
 

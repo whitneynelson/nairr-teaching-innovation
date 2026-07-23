@@ -19,7 +19,7 @@ title: Day 2
 | 2:00 – 2:30 PM | Module 1: Getting acclimated via Tapis |
 | 2:30 – 3:00 PM | Module Builder, Part 1: lecture outline + slide deck |
 | 3:00 – 4:00 PM | Faculty Fellows Panel II: Implementing, Evaluating, and Scaling AI Education; panelists: [Dr. Debanjali Banerjee](#debanjali-banerjee), [Dr. Mia Champion](#mia-champion), [Dr. Vanessa D'Amario](#vanessa-damario), [Dr. Ananya Jana](#ananya-jana) |
-| Evening | [Cielo Beach Club](#evening) |
+| 5:30 PM | [Cielo Beach Club](#evening) |
 
 ## What you'll build today
 
@@ -66,15 +66,15 @@ If you'd like transportation with the group, meet in the lobby of the Royalton P
 
 ## Faculty panelists
 
-Headshots and names below link to each panelist's full biography.
+Names below link to each panelist's full biography and headshot.
 
 ### Panel I: Designing AI Learning Experiences Across Disciplines · 11:00 AM – 12:00 PM
 
 <div class="panelist-grid">
-<div><a href="#feseha-abebe-akele"><img src="assets/images/panelists/feseha-abebe-akele.jpg" alt="Dr. Feseha Abebe-Akele"><span class="panelist-name">Dr. Feseha Abebe-Akele</span></a></div>
-<div><a href="#edgar-lobaton"><img src="assets/images/panelists/edgar-lobaton.jpg" alt="Dr. Edgar J. Lobaton"><span class="panelist-name">Dr. Edgar J. Lobaton</span></a></div>
-<div><a href="#oyebade-oyerinde"><img src="assets/images/panelists/oyebade-oyerinde.jpg" alt="Dr. Oyebade Kunle Oyerinde"><span class="panelist-name">Dr. Oyebade Kunle Oyerinde</span></a></div>
-<div><a href="#diane-uwacu"><img src="assets/images/panelists/diane-uwacu.jpg" alt="Dr. Diane Uwacu"><span class="panelist-name">Dr. Diane Uwacu</span></a></div>
+<a href="#feseha-abebe-akele"><span class="panelist-name">Dr. Feseha Abebe-Akele</span></a>
+<a href="#edgar-lobaton"><span class="panelist-name">Dr. Edgar J. Lobaton</span></a>
+<a href="#oyebade-oyerinde"><span class="panelist-name">Dr. Oyebade Kunle Oyerinde</span></a>
+<a href="#diane-uwacu"><span class="panelist-name">Dr. Diane Uwacu</span></a>
 </div>
 
 <div class="panelist-bio" id="feseha-abebe-akele">
@@ -120,10 +120,10 @@ Dr. Uwacu is an assistant professor in the Department of Computer Science at Mou
 ### Panel II: Implementing, Evaluating, and Scaling AI Education · 3:00 – 4:00 PM
 
 <div class="panelist-grid">
-<div><a href="#debanjali-banerjee"><img src="assets/images/panelists/debanjali-banerjee.jpg" alt="Dr. Debanjali Banerjee"><span class="panelist-name">Dr. Debanjali Banerjee</span></a></div>
-<div><a href="#mia-champion"><img src="assets/images/panelists/mia-champion.jpg" alt="Dr. Mia Champion"><span class="panelist-name">Dr. Mia Champion</span></a></div>
-<div><a href="#vanessa-damario"><img src="assets/images/panelists/vanessa-damario.jpg" alt="Dr. Vanessa D'Amario"><span class="panelist-name">Dr. Vanessa D'Amario</span></a></div>
-<div><a href="#ananya-jana"><img src="assets/images/panelists/ananya-jana.jpg" alt="Dr. Ananya Jana"><span class="panelist-name">Dr. Ananya Jana</span></a></div>
+<a href="#debanjali-banerjee"><span class="panelist-name">Dr. Debanjali Banerjee</span></a>
+<a href="#mia-champion"><span class="panelist-name">Dr. Mia Champion</span></a>
+<a href="#vanessa-damario"><span class="panelist-name">Dr. Vanessa D'Amario</span></a>
+<a href="#ananya-jana"><span class="panelist-name">Dr. Ananya Jana</span></a>
 </div>
 
 <div class="panelist-bio" id="debanjali-banerjee">

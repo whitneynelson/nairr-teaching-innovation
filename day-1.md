@@ -17,7 +17,7 @@ title: Day 1
 | 1:30 – 2:00 PM | What goes into AI & a shared repo; what's safe, what's not |
 | 2:00 – 2:15 PM | Scale-first design: creating assignments & courses for HPC; why HPC? |
 | 2:15 – 3:00 PM | Creating and mapping your learning outcomes |
-| Evening | [All White Party](#evening) |
+| 7:00 – 8:00 PM | [All White Party](#evening) |
 
 ## What you'll build today
 

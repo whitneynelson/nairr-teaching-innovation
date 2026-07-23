@@ -1,8 +1,8 @@
 ---
-title: Additional Resources
+title: Resources
 ---
 
-# Additional Resources
+# Resources
 
 ## AI credits for teachers and researchers
 
@@ -16,11 +16,6 @@ NAIRR provides access to compute, cloud, and AI resources for qualifying researc
 - [Moving data onto the Morehouse Supercomputing Facility](resources/moving-data-tacc.html)
 - [Dataset discovery: finding domain datasets + building a computational plan/data workflow with AI](resources/dataset-discovery.html)
 - [Sample assignments; starter ideas by discipline](resources/sample-assignments.html)
-
-## Program partners
-
-- [Morehouse Center for Broadening Participation](https://www.bpccenter.org)
-- [NAIRR Pilot](https://nairrpilot.org)
 
 ## Template repos
 
