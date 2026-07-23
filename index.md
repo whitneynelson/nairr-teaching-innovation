@@ -4,7 +4,7 @@ title: Home
 
 # NAIRR Teaching Innovation Accelerator
 
-A week-long accelerator (July 27-31) for instructors who want to build courses with real HPC & AI based assignments, no prior coding experience required.
+A week-long accelerator for instructors who want to build courses with real HPC & AI scaffolded curriculum, no prior coding experience required.
 
 ## The week at a glance
 
@@ -21,7 +21,9 @@ A week-long accelerator (July 27-31) for instructors who want to build courses w
 ## Program team
 
 **Instructors:** Dr. Renée Jordan, Prof. Whitney Nelson, Dr. Ashley Scruse
+
 **Coordinator:** Mrs. Cerrice Dawson
+
 **Program Lead:** Dr. Kinnis Gosha
 
 ## Who this is for
@@ -47,7 +49,7 @@ By Friday afternoon, your course site is complete, your instructor toolkit is pr
 
 ## NAIRR Accelerator Cohort 3 Workbook
 
-📘 [Open the NAIRR Accelerator Cohort 3 Workbook](https://docs.google.com/document/d/1BfB6uU4nvRdrNSckx9zLo1qXsc5_kjj4rOJ2ibuGGpg/edit?tab=t.0)
+[Open the NAIRR Accelerator Cohort 3 Workbook](https://docs.google.com/document/d/1BfB6uU4nvRdrNSckx9zLo1qXsc5_kjj4rOJ2ibuGGpg/edit?tab=t.0)
 
 This workbook serves as a companion throughout the accelerator, providing preparation guidance, track-specific resources, daily design activities, reflection opportunities, responsible AI planning tools, and implementation resources to support participants before, during, and after the program.
 
