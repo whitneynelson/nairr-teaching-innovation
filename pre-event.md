@@ -38,7 +38,6 @@ Everything below is account setup and software installs; no coding required yet.
 ## Reference material
 
 - [Installing Git, VS Code/Antigravity, and setting up your Morehouse Supercomputing Facility account](resources/setup-git-vscode-tacc.html)
-- [Accessing the Morehouse Supercomputing Facility via TAPIS: request to walkthrough](resources/accessing-tapis.html)
 - [Git basics + cheat sheet](resources/git-basics.html)
 
 Next up: **Day 1**; set up your course-builder repos.
