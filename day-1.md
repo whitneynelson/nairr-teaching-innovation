@@ -35,8 +35,8 @@ You're not starting from a blank repo; you're using a pre-built template. For ea
 #### 2. Clone both locally
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/your-course-site.git
-git clone https://github.com/YOUR-USERNAME/your-course-toolkit.git
+git clone https://github.com/whitneynelson/your-course-site.git
+git clone https://github.com/whitneynelson/your-course-toolkit.git
 ```
 
 Open both folders side by side in your editor.
