@@ -17,12 +17,12 @@ Everything below is account setup and software installs; no coding required yet.
 | Time | Session |
 |:---|:---|
 | **Before Jul 20** | Request your Morehouse Supercomputing Facility account at [bpccenter.org/current-programs/cbpc-hpc-resources](https://www.bpccenter.org/current-programs/cbpc-hpc-resources) with your .edu email (approval can take a few business days); set up MFA (Duo/Okta). Download Git and an IDE (VS Code or Antigravity) |
-| **Before Jul 24** | Verify NAIRR/Tapis tenant login; confirm Zoom + cohort Slack/Teams |
+| **Before Jul 24** | Verify TACC/VISTA login |
 | **Before Jul 26** | Create a free GitHub account (or confirm your institution's GitHub Education org) |
 | **Before Jul 26** | Create a free Calendly account (optional) |
-| **Before Jul 26** | Upload your current syllabus (or a model syllabus), plus your institution's syllabus policy checklist, to the shared drive; already have learning outcomes or assignments drafted? Bring those too |
+| **Before Jul 26** | Place your current syllabus (or a model syllabus), plus your institution's syllabus policy checklist, in an accesible folder; already have learning outcomes or assignments drafted? Bring those too |
 | **Before Jul 26** | Check with your campus LMS admin whether Canva-Blackboard LTI is already enabled, if you want it live this week |
-| **7:00 PM, Jul 26** | Meet and Greet, Gourmet Marché Restaurant, Royalton Punta Cana Resort & Casino, with Dr. Jordan, Prof. Nelson, and Mrs. Dawson |
+| **7:00 PM, Jul 26** | Meet and Greet, Gourmet Marché Restaurant, Royalton Punta Cana Resort & Casino, with Dr. Kinnis Gosha, Dr. Renée Jordan, Prof. Whitney Nelson, Mrs. Cerrice Dawson, and Dr. Ashley Scruse |
 
 ## Checklist
 
