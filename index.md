@@ -78,3 +78,5 @@ Each day's tab links the modules relevant to that day, but here's the full set i
 8. [Office Hours Setup](modules/module-08.html)
 9. [Publish Your Course Site](modules/module-09.html)
 10. [Reuse This Template](modules/module-10.html)
+11. [Parallel Computing with MPI & OpenMP](modules/module-11.html) *(optional, CS track)*
+12. [Containerization for Reproducibility](modules/module-12.html) *(optional, CS track)*

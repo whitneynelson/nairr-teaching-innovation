@@ -40,11 +40,17 @@ Confirm both `course-site` and `course-toolkit` are set as GitHub template repos
 
 Note which toolkit artifacts are still pending, and what department or institutional buy-in you still need.
 
+### Going further: optional CS-track modules
+
+If you teach CS or programming and want more technical depth than the general track covers, two optional self-paced modules are available whenever you're ready: parallel computing with MPI/OpenMP, and containerization for reproducibility (Docker → Apptainer). Both assume you already code and build on the same pattern as Module 04.
+
 ## Full module instructions
 
 - [Module 08: Office Hours Setup](modules/module-08.html)
 - [Module 09: Publish Your Course Site](modules/module-09.html)
 - [Module 10: Reuse This Template](modules/module-10.html)
+- [Module 11: Parallel Computing with MPI & OpenMP](modules/module-11.html) *(optional, self-paced, CS track)*
+- [Module 12: Containerization for Reproducibility](modules/module-12.html) *(optional, self-paced, CS track)*
 
 ## Before you leave
 
