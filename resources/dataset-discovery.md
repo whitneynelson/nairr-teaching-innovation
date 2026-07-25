@@ -11,7 +11,7 @@ Before you can build an HPC-based assignment, you need real (or realistic) data 
 Start broad, then narrow to your discipline:
 
 - **General research data repositories:** [data.gov](https://www.data.gov), [Kaggle Datasets](https://www.kaggle.com/datasets), [Google Dataset Search](https://datasetsearch.research.google.com/), [Hugging Face Datasets](https://huggingface.co/datasets)
-- **Discipline-specific:** most fields have a standard go-to repository; e.g. genomics (NCBI/GEO), climate science (NOAA), social science (ICPSR), astronomy (NASA/MAST). Ask your AI coding assistant: *"What are the standard public dataset repositories for [my field]?"*; it can point you toward the field-specific ones you may not know about.
+- **Discipline-specific:** most fields have a standard go-to repository; e.g. genomics (NCBI/GEO), climate science (NOAA), social science (ICPSR), astronomy (NASA/MAST), economics/finance (FRED, World Bank Open Data, SEC EDGAR), education (NCES, IPEDS). Ask your AI coding assistant: *"What are the standard public dataset repositories for [my field]?"*; it can point you toward the field-specific ones you may not know about.
 - **NAIRR-affiliated resources:** ask your program contact about NAIRR's own resource index for datasets and tools by discipline; it's referenced elsewhere in program materials as a starting point worth checking before searching from scratch.
 
 ## Using AI to scope a computational plan
@@ -28,6 +28,7 @@ Once you have a workflow sketched:
 1. Note the dataset source and access instructions; this goes in `course-site/resources.md` (Module 04, Part 2)
 2. Ask your AI coding assistant to scaffold the starter notebook/script matching the workflow you just sketched
 3. If you don't code, ask your AI coding assistant to also produce a plain-language walkthrough of what the script does; this doubles as material for you to reference when writing the quiz
+4. Decide whether your *students* will run this workflow themselves or only interact with its output; that's a separate question from whether you code, and it changes what you hand them. See [Sample Assignments: "If your students don't code"](sample-assignments.html) and Module 04, Step 5.
 
 ## A note on data size
 

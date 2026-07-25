@@ -30,8 +30,9 @@ The technical backbone for the assignment you're about to build supplementary ma
 Continuing the module you started on Day 2:
 
 1. Build the quiz, with a full answer key; this stays in your private toolkit.
-2. Build the assignment's supplementary material (datasets, reference links, setup instructions) into your public course site. If you already have an assignment written for this module, upload or paste it and have your AI coding assistant adapt it rather than drafting from nothing.
-3. If you code, ask your AI coding assistant to scaffold the actual assignment notebook/script now. If you don't, describe the assignment goal and dataset and have it draft the starter notebook/script *and* a plain-language explanation you can hand to students.
+2. Decide whether your *students* code, separately from whether you do; if not, plan for them to interpret pre-run output or work from a config-only notebook rather than editing code themselves (see [Sample Assignments](resources/sample-assignments.html)).
+3. Build the assignment's supplementary material (datasets, reference links, setup instructions) into your public course site. If you already have an assignment written for this module, upload or paste it and have your AI coding assistant adapt it rather than drafting from nothing.
+4. If you code, ask your AI coding assistant to scaffold the actual assignment notebook/script now. If you don't, describe the assignment goal and dataset and have it draft the starter notebook/script *and* a plain-language explanation you can hand to students.
 
 ### HPC Acclimation, Modules 2–3: running Jupyter via Tapis, monitoring jobs
 

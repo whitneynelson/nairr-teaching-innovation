@@ -41,7 +41,15 @@ In `course-toolkit/quizzes/module-XX-quiz.md`, with a full answer key. Stays pri
 
 ### Step 5: Build the assignment's supplementary material
 
-In `course-site/resources.md`; datasets, reference links, setup instructions.
+First, a question separate from your own coding comfort: **do the students in this course code?** This decides the assignment's structure, not just how you build it.
+
+- **Students code:** they get a starter notebook/script with clear TODOs to complete themselves, submitted as their own batch/interactive job; the normal case.
+- **Students don't code:** don't hand them something to edit as code. Two patterns work well instead:
+  - **Pre-run, then interpret:** you (or your AI coding assistant) run the computation ahead of time; students receive the output; plots, tables, job logs; and the assignment is entirely about interpreting and reasoning about it.
+  - **Config-only:** students get a notebook where the only thing they touch is one or two clearly labeled input values (a date range, a sample size, a threshold); they change the value, click Run All, and never read or write code as code.
+  Either way, the graded deliverable becomes understanding and reasoning (e.g. *"the job took 40 minutes on 1 node vs. 6 on 8; why?"*), not code correctness. See [Sample Assignments: "If your students don't code"](../resources/sample-assignments.html) for more.
+
+In `course-site/resources.md`; datasets, reference links, setup instructions, and which pattern above this assignment uses.
 - **If you code:** ask your AI coding assistant to scaffold the actual assignment notebook/script now.
 - **If you don't code:** describe the assignment goal and dataset and let your AI coding assistant draft the starter notebook/script *and* a plain-language explanation.
 
