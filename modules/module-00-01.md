@@ -12,8 +12,7 @@ This module is just installing software and creating two folders (repos) that wi
 
 <ul class="checklist">
 <li>A GitHub account</li>
-<li>Git installed (<code>git --version</code> works in your terminal)</li>
-<li>VS Code or Antigravity installed</li>
+<li>Option A: Git installed (<code>git --version</code> works in your terminal) and VS Code or Antigravity installed &mdash; <em>or</em> &mdash; Option B: GitHub Desktop and Claude Desktop installed (no IDE needed)</li>
 <li>Morehouse Supercomputing Facility account + MFA set up</li>
 </ul>
 
@@ -33,12 +32,14 @@ You now have your own copy of both, no shared history tying back to the template
 
 ## Step 2: Clone both repos locally
 
+**Option A (Git + editor):**
 ```bash
 git clone https://github.com/YOUR-USERNAME/your-course-site.git
 git clone https://github.com/YOUR-USERNAME/your-course-toolkit.git
 ```
-
 "Cloning" just means downloading a working copy onto your own computer. Open both folders side by side in your editor.
+
+**Option B (GitHub Desktop, no terminal):** open GitHub Desktop → **File → Clone Repository** → pick each repo from your account → choose a save location. Same result, no typing required.
 
 ## Step 3: Walk the environment
 
@@ -50,19 +51,19 @@ git clone https://github.com/YOUR-USERNAME/your-course-toolkit.git
 
 These two folders aren't just storage; they're the environment Claude works inside all week, so a well-organized repo (a `CLAUDE.md` stating intent, a `skills/` folder, clear public/private boundaries) means better, less back-and-forth results from every prompt you write from here on. See Day 1's "Why repo structure matters" for the fuller version.
 
-## Step 4: Connect Claude Code
+## Step 4: Connect Claude
 
-Claude Code lets you talk to Claude directly inside your editor; it reads your files, writes and edits, and runs commands from a sidebar panel.
+**Option A (Claude Code, inside your editor):** Claude Code lets you talk to Claude directly inside your editor; it reads your files, writes and edits, and runs commands from a sidebar panel.
 
-**VS Code:** Extensions view (`Cmd+Shift+X` / `Ctrl+Shift+X`) → search "Claude Code" → install (official Anthropic publisher) → open any file → click the orange spark icon (✱) → sign in.
+- **VS Code:** Extensions view (`Cmd+Shift+X` / `Ctrl+Shift+X`) → search "Claude Code" → install (official Anthropic publisher) → open any file → click the orange spark icon (✱) → sign in.
+- **Antigravity:** same Extensions shortcut → install "Claude Code" from Open VSX → open the panel from the Spark icon → sign in (an API key is the more reliable fallback right now, since this integration is newer).
+- **If the extension won't connect**, fall back to the command line, which works the same everywhere:
+  ```bash
+  npm install -g @anthropic-ai/claude-code
+  ```
+  Then run `claude` in your editor's integrated terminal.
 
-**Antigravity:** same Extensions shortcut → install "Claude Code" from Open VSX → open the panel from the Spark icon → sign in (an API key is the more reliable fallback right now, since this integration is newer).
-
-**If the extension won't connect**, fall back to the command line, which works the same everywhere:
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-Then run `claude` in your editor's integrated terminal.
+**Option B (Claude Desktop, no editor):** open Claude Desktop → sign in with your Claude Pro/Max/Team/Enterprise account → **Settings → Connectors** → enable **Filesystem** → point it at the folder holding your cloned repos. Claude now reads and writes your course files directly from the chat window, the same job Claude Code does inside an editor.
 
 ### Using it: coders vs. non-coders
 
@@ -72,6 +73,8 @@ Then run `claude` in your editor's integrated terminal.
 Either way works. Building an HPC assignment doesn't require you to already know Slurm, Python, or bash; it requires knowing what you want the assignment to *do*.
 
 ## Troubleshooting
+
+**Option A (Git/terminal):**
 
 **"Password authentication is not supported"**; get a Personal Access Token: [github.com/settings/tokens](https://github.com/settings/tokens) → **Generate new token (classic)** → check `repo` scope → generate → copy immediately (shown once) → paste it when Git prompts for a password.
 
@@ -85,13 +88,19 @@ git remote set-url origin https://github.com/YOUR-USERNAME/your-repo.git
 
 **Claude Code extension doesn't show up**; make sure an actual file is open, not just a folder. Try "Developer: Reload Window." In Antigravity, if the CLI doesn't recognize the extension, use the CLI fallback above instead.
 
+**Option B (GitHub Desktop / Claude Desktop):**
+
+**GitHub Desktop won't sign in or can't find your repo**; confirm you're signed into the same GitHub account that owns the repo (**File → Options/Preferences → Accounts**), and that the repo was actually created from the template first (Step 1).
+
+**Claude Desktop can't see your files**; check **Settings → Connectors → Filesystem** is enabled and pointed at the folder containing your cloned repos, not a parent or unrelated folder.
+
 ## Checkpoint
 
 <ul class="checklist">
 <li><code>course-site</code> repo created (public) and cloned locally</li>
 <li><code>course-toolkit</code> repo created (private) and cloned locally</li>
-<li>Both folders open in your editor and briefly explored</li>
-<li>Claude Code installed and connected</li>
+<li>Both folders open in your editor, or visible to Claude Desktop via the Filesystem connector</li>
+<li>Claude Code (Option A) or Claude Desktop with Filesystem connector (Option B) installed and connected</li>
 <li>One test prompt sent successfully</li>
 </ul>
 

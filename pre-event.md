@@ -8,7 +8,7 @@ title: Pre-Event
 
 <div class="card">
 
-Everything below is account setup and software installs; no coding required yet. "MFA" is the second login step (a phone app confirming it's you); an "IDE" is the program you'll write and edit files in. See [Setup: Git, VS Code, Morehouse Supercomputing Facility](resources/setup-git-vscode-tacc.html) for the full walkthrough, and [Accessing the Morehouse Supercomputing Facility via TAPIS](resources/accessing-tapis.html) for how to request your account.
+Everything below is account setup and software installs; no coding required yet. "MFA" is the second login step (a phone app confirming it's you); an "IDE" is the program you'll write and edit files in. Don't want to install an IDE? Skip it and use Claude Desktop + GitHub Desktop instead (both point-and-click apps, no code editor or terminal required); see the setup guide below for both paths. See [Setup: Git, VS Code, Morehouse Supercomputing Facility](resources/setup-git-vscode-tacc.html) for the full walkthrough, and [Accessing the Morehouse Supercomputing Facility via TAPIS](resources/accessing-tapis.html) for how to request your account.
 
 </div>
 
@@ -16,7 +16,7 @@ Everything below is account setup and software installs; no coding required yet.
 
 | Time | Session |
 |:---|:---|
-| **Before Jul 20** | Request your Morehouse Supercomputing Facility account at [bpccenter.org/current-programs/cbpc-hpc-resources](https://www.bpccenter.org/current-programs/cbpc-hpc-resources) with your .edu email (approval can take a few business days); set up MFA (Duo/Okta). Download Git and an IDE (VS Code or Antigravity) |
+| **Before Jul 20** | Request your Morehouse Supercomputing Facility account at [bpccenter.org/current-programs/cbpc-hpc-resources](https://www.bpccenter.org/current-programs/cbpc-hpc-resources) with your .edu email (approval can take a few business days); set up MFA (Duo/Okta). Download Git and an IDE (VS Code or Antigravity) &mdash; or, if you'd rather skip the IDE, download Claude Desktop and GitHub Desktop instead |
 | **Before Jul 24** | Verify TACC/VISTA login |
 | **Before Jul 26** | Create a free GitHub account (or confirm your institution's GitHub Education org) |
 | **Before Jul 26** | Create a free Calendly account (optional) |
@@ -28,8 +28,7 @@ Everything below is account setup and software installs; no coding required yet.
 
 <ul class="checklist">
 <li>Morehouse Supercomputing Facility account created, MFA set up</li>
-<li>Git installed (<code>git --version</code> works in your terminal)</li>
-<li>VS Code or Antigravity installed</li>
+<li>Option A: Git installed (<code>git --version</code> works in your terminal) and VS Code or Antigravity installed &mdash; <em>or</em> &mdash; Option B: GitHub Desktop and Claude Desktop installed (no IDE needed)</li>
 <li>GitHub account created</li>
 <li>Calendly account created (optional, needed Day 3)</li>
 <li>Syllabus + policy checklist uploaded to the shared drive</li>

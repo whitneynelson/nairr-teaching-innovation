@@ -32,12 +32,12 @@ Open to instructors across every discipline and skill level:
 
 <div class="card">
 
-- **If you code**, AI-powered coding assistants speeds up writing and debugging the scripts your students will run on HPC.
-- **If you don't code**, AI-powered coding assistant writes those scripts *for* you, so you can still build and understand HPC-based assignments without becoming a programmer in the process.
+- **If you code**, AI coding assistants speeds up writing and debugging the scripts your students will run on HPC.
+- **If you don't code**, AI coding assistant writes those scripts *for* you, so you can still build and understand HPC-based assignments without becoming a programmer in the process.
 
 </div>
 
-Already teaching a version of this course? Bring what you have; upload or paste your existing syllabus, learning outcomes, or assignments at any point this week, and your AI-powered coding assistant will adapt them instead of you starting from a blank template.
+Already teaching a version of this course? Bring what you have; upload or paste your existing syllabus, learning outcomes, or assignments at any point this week, and your AI coding assistant will adapt them instead of you starting from a blank template.
 
 Everyone leaves the week with two things: a public course site and a private instructor toolkit, both fully built. Publishing the course site via GitHub Pages is one option for sharing it; you can just as easily hand the finished material off to Google Classroom, Canvas, Blackboard, or whatever your institution already uses.
 
@@ -57,7 +57,7 @@ This workbook serves as a companion throughout the accelerator, providing prepar
 
 <ul class="checklist">
 <li>Create your Morehouse Supercomputing Facility account and set up MFA</li>
-<li>Install Git and an IDE (VS Code or Antigravity)</li>
+<li>Install Git and an IDE (VS Code or Antigravity) &mdash; or, if you'd rather skip the IDE, Claude Desktop and GitHub Desktop instead</li>
 <li>Create a free GitHub account</li>
 <li>Bring your current syllabus (or use the model syllabus provided) plus your institution's syllabus policy checklist</li>
 </ul>

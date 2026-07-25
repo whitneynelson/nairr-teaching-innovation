@@ -34,20 +34,23 @@ You're not starting from a blank repo; you're using a pre-built template. For ea
 
 #### 2. Clone both locally
 
+**Option A (Git + editor):**
 ```bash
 git clone https://github.com/your-user-name/your-course-site.git
 git clone https://github.com/your-user-name/your-course-toolkit.git
 ```
-
 Open both folders side by side in your editor.
 
-#### 3. Connect Claude Code
+**Option B (GitHub Desktop, no terminal):** open GitHub Desktop → **File → Clone Repository** → select each repo from your account → choose where to save them locally. Open both folders side by side however you'd like to browse files (Finder/File Explorer is fine; you won't be editing them directly).
 
-Claude Code is the extension that lets you talk to Claude directly inside your editor:
+#### 3. Connect Claude
 
+**Option A (Claude Code, inside your editor):**
 - **VS Code:** Extensions view (`Cmd+Shift+X` / `Ctrl+Shift+X`) → search "Claude Code" → install → sign in.
 - **Antigravity:** same shortcut → install "Claude Code" from Open VSX → sign in (an API key is the more reliable fallback right now).
 - **Either editor, if the extension won't connect:** `npm install -g @anthropic-ai/claude-code`, then run `claude` in your terminal.
+
+**Option B (Claude Desktop, no editor):** open Claude Desktop → sign in → **Settings → Connectors** → enable **Filesystem** and point it at the folder holding your cloned repos. Claude can now read and write your course files directly from the chat window.
 
 #### 4. Send a test prompt
 
@@ -67,7 +70,7 @@ The two folders you just created aren't just storage; they're the environment Cl
 
 Draft 3–5 learning outcomes for your course; at least one should involve using HPC resources. For each, note how it'll be assessed (assignment, quiz, exam) and whether it's HPC-based. You don't need the technical details of the HPC assignment yet, just the flag; that gets built out on Day 2 and 3.
 
-Already have learning outcomes drafted for this course? Paste them in and ask your AI-powered coding assistant to map them against the HPC requirement instead of starting from scratch.
+Already have learning outcomes drafted for this course? Paste them in and ask your AI coding assistant to map them against the HPC requirement instead of starting from scratch.
 
 ## Full module instructions
 

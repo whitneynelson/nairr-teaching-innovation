@@ -2,32 +2,41 @@
 title: Setup - Git, VS Code, and Morehouse Supercomputing Facility
 ---
 
-# Installing Git, VS Code/Antigravity, and Logging Into the Morehouse Supercomputing Facility
+# Installing Git, VS Code/Antigravity (or Claude Desktop), and Logging Into the Morehouse Supercomputing Facility
 
-Before this week starts, you need three things on your computer: a way to save/share your work (Git), an editor to write in (VS Code or Antigravity), and access to the supercomputer you'll run assignments on (the Morehouse Supercomputing Facility). None of this requires prior coding experience; it's just installing software and creating accounts, the same as setting up any new app.
+Before this week starts, you need three things on your computer: a way to save/share your work (Git or GitHub Desktop), a way to write files and talk to Claude (an editor, or Claude Desktop if you'd rather skip installing an IDE), and access to the supercomputer you'll run assignments on (the Morehouse Supercomputing Facility). None of this requires prior coding experience; it's just installing software and creating accounts, the same as setting up any new app.
 
-## 1. Install Git
+## 1. Choose your setup: Option A (editor) or Option B (no IDE)
 
-Git tracks changes to your files and is how your course repos get created, saved, and shared.
+Everything downstream; cloning your repos, editing files, talking to Claude; works the same either way. Pick once and stick with it for the week.
 
-- **Mac:** open Terminal and type `git --version`. If it's not installed, your Mac will prompt you to install the Xcode Command Line Tools; say yes.
-- **Windows:** download and install [Git for Windows](https://git-scm.com/download/win). Accept the default options during setup unless you have a specific reason not to.
-- **Verify it worked:** open a terminal (Mac: Terminal app; Windows: the "Git Bash" app that Git for Windows installs) and run:
-  ```bash
-  git --version
-  ```
-  You should see a version number, e.g. `git version 2.43.0`.
+### Option A: Git + VS Code or Antigravity
 
-## 2. Install an editor: VS Code or Antigravity
+- **Install Git:**
+  - **Mac:** open Terminal and type `git --version`. If it's not installed, your Mac will prompt you to install the Xcode Command Line Tools; say yes.
+  - **Windows:** download and install [Git for Windows](https://git-scm.com/download/win). Accept the default options during setup unless you have a specific reason not to.
+  - **Verify it worked:** open a terminal (Mac: Terminal app; Windows: the "Git Bash" app that Git for Windows installs) and run:
+    ```bash
+    git --version
+    ```
+    You should see a version number, e.g. `git version 2.43.0`.
+- **Install an editor:**
+  - **VS Code:** download from [code.visualstudio.com](https://code.visualstudio.com/); pick your operating system, run the installer, accept defaults.
+  - **Antigravity:** an alternative editor also supported this week; download from your program's provided link and install the same way.
+  - Either one works identically for this program; use whichever you're more comfortable with, or the one your facilitator recommends.
+- You'll talk to Claude through the **Claude Code** extension inside your editor (see Module 00–01, Step 4).
 
-This is where you'll open your course files and talk to Claude Code.
+### Option B: GitHub Desktop + Claude Desktop (no IDE, no terminal)
 
-- **VS Code:** download from [code.visualstudio.com](https://code.visualstudio.com/); pick your operating system, run the installer, accept defaults.
-- **Antigravity:** an alternative editor also supported this week; download from your program's provided link and install the same way.
+Prefer not to install a code editor at all? This path skips both the editor and the command line.
 
-Either one works identically for this program; use whichever you're more comfortable with, or the one your facilitator recommends.
+- **GitHub Desktop:** download from [desktop.github.com](https://desktop.github.com/) and sign in with your GitHub account. This is what you'll use to clone, save, and publish your repos with buttons instead of Git commands.
+- **Claude Desktop:** download from [claude.ai/download](https://claude.ai/download) and sign in with your Claude Pro, Max, Team, or Enterprise account. In **Settings → Connectors**, enable the **Filesystem** connector and point it at the folder where you'll keep your cloned repos; this lets you talk to Claude in a normal chat window and have it read and write your course files directly, the same job the Claude Code extension does inside an editor.
+- Nothing here requires typing a command; GitHub Desktop and Claude Desktop are both point-and-click apps.
 
-## 3. Create your Morehouse Supercomputing Facility account and set up MFA
+If you're unsure which to pick: Option B is the faster on-ramp if you've never used a code editor or terminal before; Option A gives you a bit more visibility into what's happening under the hood, which some coders prefer. Either gets you to the same place by Friday.
+
+## 2. Create your Morehouse Supercomputing Facility account and set up MFA
 
 The Morehouse Supercomputing Facility is the supercomputer provider your HPC assignments will run on.
 
@@ -44,8 +53,7 @@ The Morehouse Supercomputing Facility is the supercomputer provider your HPC ass
 ## Checklist
 
 <ul class="checklist">
-<li>Git installed, <code>git --version</code> works in your terminal</li>
-<li>VS Code or Antigravity installed</li>
+<li>Option A: Git installed (<code>git --version</code> works in your terminal) and VS Code or Antigravity installed &mdash; <em>or</em> &mdash; Option B: GitHub Desktop and Claude Desktop installed, with the Filesystem connector enabled</li>
 <li>Morehouse Supercomputing Facility account requested (and approved, if enough lead time)</li>
 <li>MFA (Duo/Okta) set up on your Morehouse Supercomputing Facility account</li>
 </ul>

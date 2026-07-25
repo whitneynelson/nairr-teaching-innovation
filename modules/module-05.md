@@ -20,10 +20,10 @@ Fill in `course-toolkit/grading-scale.md`.
 
 ## Step 3: Build the AI-use rubric
 
-Since assignments involve an AI-powered coding assistant either writing code (coders) or generating it from plain-language descriptions (non-coders), your rubric needs criteria that make sense for both:
+Since assignments involve an AI coding assistant either writing code (coders) or generating it from plain-language descriptions (non-coders), your rubric needs criteria that make sense for both:
 
 - Did the student disclose how they used AI?
-- Coders: did they understand and can they explain the code their AI-powered coding assistant helped write?
+- Coders: did they understand and can they explain the code their AI coding assistant helped write?
 - Non-coders: can they explain what the generated script does, even if they didn't write it line-by-line?
 - Any academic integrity flags specific to your policy
 
