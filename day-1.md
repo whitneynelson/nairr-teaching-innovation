@@ -55,7 +55,7 @@ Once connected, send one test prompt; coders can ask it to explain a file in the
 
 <div class="card">
 
-You don't need to already know Slurm, Python, or bash to build an HPC-based assignment this week. You need to know what you want the assignment to *do*; your AI-powered coding assistant handles the syntax, whether you're writing code yourself or asking for it in plain English.
+You don't need to already know Slurm, Python, or bash to build an HPC-based assignment this week. You need to know what you want the assignment to *do*; your AI coding assistant handles the syntax.
 
 </div>
 
