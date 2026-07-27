@@ -11,7 +11,7 @@ title: Day 1
 | Time | Session |
 |:---|:---|
 | 9:30 – 10:00 AM | Arrival, coffee, informal networking |
-| 10:00 – 10:30 AM | Welcome, daily agenda review & introductions |
+| 10:00 – 10:30 AM | Welcome, daily agenda review, Introductions, and Complete evaluation consent from: https://morehouse.az1.qualtrics.com/jfe/form/SV_3UT06VnDgqBaiFM  |
 | 10:30 – 12:30 PM | What is NAIRR? A tour of the ecosystem. Set up your course-builder repos: GitHub + GitHub Pages |
 | 12:30 – 1:30 PM | Lunch |
 | 1:30 – 2:00 PM | What goes into AI & a shared repo; what's safe, what's not |
