@@ -42,7 +42,7 @@ Note which toolkit artifacts are still pending, and what department or instituti
 
 ### Going further: optional CS-track modules
 
-If you teach CS or programming and want more technical depth than the general track covers, two optional self-paced modules are available whenever you're ready: parallel computing with MPI/OpenMP, and containerization for reproducibility (Docker → Apptainer). Both assume you already code and build on the same pattern as Module 04.
+If you teach CS or programming and want more technical depth than the general track covers, three optional self-paced modules are available whenever you're ready: parallel computing with MPI/OpenMP, containerization for reproducibility (Docker → Apptainer), and ML Hub for Tapis (model discovery, inference, fine-tuning). All three assume you already code and build on the same pattern as Module 04.
 
 ## Full module instructions
 
@@ -51,6 +51,7 @@ If you teach CS or programming and want more technical depth than the general tr
 - [Module 10: Reuse This Template](modules/module-10.html)
 - [Module 11: Parallel Computing with MPI & OpenMP](modules/module-11.html) *(optional, self-paced, CS track)*
 - [Module 12: Containerization for Reproducibility](modules/module-12.html) *(optional, self-paced, CS track)*
+- [Module 13: ML Hub for Tapis](modules/module-13.html) *(optional, self-paced, CS track)*
 
 ## Before you leave
 

@@ -34,7 +34,7 @@ Ask your AI coding assistant to scaffold:
 3. The conversion step to an Apptainer `.sif` image
 4. A Slurm batch script that runs the `.sif` image on the cluster (`apptainer exec` or `apptainer run`), with each line explained
 
-Draft supplementary material (starter code, Dockerfile, setup instructions) into `course-site/resources.md`.
+Draft supplementary material (starter code, Dockerfile, setup instructions) into `course-site/resources/tools.md`.
 
 ## Step 3: Quiz
 
@@ -49,7 +49,7 @@ Re-read `course-site/modules/module-XX.md`; confirm no answer keys, prep notes, 
 <ul class="checklist">
 <li>Module number confirmed (curriculum-map slot or bonus module)</li>
 <li>Lecture outline in <code>course-site/modules/module-XX.md</code>, full prep notes in <code>course-toolkit/lecture-prep-notes/module-XX-notes.md</code></li>
-<li>Dockerfile, Apptainer conversion steps, and Slurm script drafted; supplementary material in <code>course-site/resources.md</code></li>
+<li>Dockerfile, Apptainer conversion steps, and Slurm script drafted; supplementary material in <code>course-site/resources/tools.md</code></li>
 <li>Quiz with answer key in <code>course-toolkit/quizzes/</code></li>
 <li>Public file re-checked for accidental private content</li>
 </ul>

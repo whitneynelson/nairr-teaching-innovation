@@ -30,6 +30,8 @@ You're not starting from a blank repo; you're using a pre-built template.
 
 You now have your own copy of both, no shared history tying back to the template.
 
+Only building a single assignment (Track II)? Name the repo something like `my-assignment-site` instead of `my-course-site`; everything downstream still works, it's just a folder name.
+
 ## Step 2: Clone both repos locally
 
 **Option A (Git + editor):**

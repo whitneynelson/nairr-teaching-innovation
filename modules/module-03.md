@@ -10,6 +10,8 @@ This session produces a *draft skeleton*, not a finished syllabus; some sections
 
 ## Step 1: Start from what you have
 
+This follows the track from [Module 02](module-02.html): Track I means no existing syllabus, Track II/III means you uploaded one pre-event.
+
 - **Have an existing syllabus:** open the one you uploaded pre-event. You're revising, not starting blank.
 - **Starting from scratch:** use the model syllabus provided. Adapt it with your AI coding assistant; e.g. *"Adapt this model syllabus for a [course topic] course with these learning outcomes: [paste from Module 02]."*
 

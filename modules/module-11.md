@@ -30,7 +30,7 @@ Ask your AI coding assistant to scaffold:
 3. An MPI version (e.g. `mpi4py` in Python, or `MPI_Send`/`MPI_Recv` in C)
 4. A Slurm batch script for each version, with every `#SBATCH` line explained; pay close attention to `--ntasks` vs. `--cpus-per-task`, since getting these mismatched lets a job run without erroring while quietly not parallelizing at all
 
-Draft supplementary material (starter code, dataset if any, setup instructions) into `course-site/resources.md`.
+Draft supplementary material into `course-site/resources/`: the dataset (if any) into `datasets.md`, starter code and setup instructions into `tools.md`.
 
 ## Step 3: Quiz
 
@@ -45,7 +45,7 @@ Re-read `course-site/modules/module-XX.md`; confirm no answer keys, prep notes, 
 <ul class="checklist">
 <li>Module number confirmed (curriculum-map slot or bonus module)</li>
 <li>Lecture outline in <code>course-site/modules/module-XX.md</code>, full prep notes in <code>course-toolkit/lecture-prep-notes/module-XX-notes.md</code></li>
-<li>OpenMP + MPI starter code and Slurm scripts drafted; supplementary material in <code>course-site/resources.md</code></li>
+<li>OpenMP + MPI starter code and Slurm scripts drafted in <code>course-site/resources/tools.md</code>; dataset (if any) in <code>resources/datasets.md</code></li>
 <li>Quiz with answer key in <code>course-toolkit/quizzes/</code></li>
 <li>Public file re-checked for accidental private content</li>
 </ul>

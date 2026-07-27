@@ -80,3 +80,4 @@ Each day's tab links the modules relevant to that day, but here's the full set i
 10. [Reuse This Template](modules/module-10.html)
 11. [Parallel Computing with MPI & OpenMP](modules/module-11.html) *(optional, CS track)*
 12. [Containerization for Reproducibility](modules/module-12.html) *(optional, CS track)*
+13. [ML Hub for Tapis](modules/module-13.html) *(optional, CS track)*

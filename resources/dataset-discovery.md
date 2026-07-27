@@ -4,7 +4,7 @@ title: Dataset Discovery for HPC
 
 # Finding Datasets in Your Domain & Building a Data Workflow with AI
 
-Before you can build an HPC-based assignment, you need real (or realistic) data for students to work with. This page is about finding that data, then using an AI coding assistant to sketch out the steps ("the workflow") for turning raw data into something your assignment actually uses.
+Before you can build an HPC-based assignment, you need real (or realistic) data for students to work with — this is a prerequisite for Module 04, not an optional side step, no matter which track you're on. This page is about finding that data, then using an AI coding assistant to sketch out the steps ("the workflow") for turning raw data into something your assignment actually uses.
 
 ## Where to look for datasets
 
@@ -25,7 +25,7 @@ This matters because not every step needs a supercomputer; your AI coding assist
 ## Turning this into assignment material
 
 Once you have a workflow sketched:
-1. Note the dataset source and access instructions; this goes in `course-site/resources.md` (Module 04, Part 2)
+1. Note the dataset source and access instructions; this goes in `course-site/resources/datasets.md` (Module 04, Part 2) — add the entry as soon as you've identified the dataset, even before the rest of the assignment is built
 2. Ask your AI coding assistant to scaffold the starter notebook/script matching the workflow you just sketched
 3. If you don't code, ask your AI coding assistant to also produce a plain-language walkthrough of what the script does; this doubles as material for you to reference when writing the quiz
 4. Decide whether your *students* will run this workflow themselves or only interact with its output; that's a separate question from whether you code, and it changes what you hand them. See [Sample Assignments: "If your students don't code"](sample-assignments.html) and Module 04, Step 5.

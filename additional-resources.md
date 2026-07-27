@@ -6,7 +6,7 @@ title: Resources
 
 ## AI credits for teachers and researchers
 
-NAIRR provides access to compute, cloud, and AI resources for qualifying researchers and educators, beyond what's allocated to this accelerator. See the [NAIRR Pilot website](https://nairrpilot.org) for current programs and how to apply.
+NAIRR provides access to compute, cloud, and AI resources for qualifying researchers and educators, independent of this accelerator. See the [NAIRR Pilot website](https://nairrpilot.org) for current programs and how to apply.
 
 ## Reference material
 
