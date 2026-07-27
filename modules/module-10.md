@@ -32,4 +32,4 @@ Flag which toolkit artifacts you'd reuse as-is vs. rebuild.
 <li>Clear on what carries over vs. rebuilds for next use</li>
 </ul>
 
-This is the last module; congratulations, both repos are built and your course site is live.
+This is the last of the scheduled modules; congratulations, both repos are built and your course site is live. If you teach CS/programming and want more technical depth, the optional, self-paced [Modules 11–13](../index.html) (parallel computing, containerization, ML Hub for Tapis) are there whenever you're ready.

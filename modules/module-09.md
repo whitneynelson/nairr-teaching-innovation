@@ -16,19 +16,15 @@ Before turning anything on, confirm `course-site` contains none of:
 - Any student data, even de-identified samples
 - Your private lecture prep notes
 
-## Step 2: Re-check the Three Hard Rules
+## Step 2: Turn on GitHub Pages (if you're using it)
 
-Confirm your program's "Three Hard Rules" for what's safe to publish with your facilitator before proceeding.
+In `course-site` → **Settings** → **Pages** → set source branch (usually `main`) → save. Publishing your own LMS or Google Classroom copy instead? Skip to Step 4.
 
-## Step 3: Turn on GitHub Pages (if you're using it)
-
-In `course-site` → **Settings** → **Pages** → set source branch (usually `main`) → save. Publishing your own LMS or Google Classroom copy instead? Skip to Step 5.
-
-## Step 4: Verify
+## Step 3: Verify
 
 Visit the published URL. Click through every page; syllabus, schedule, modules, resources, office hours; confirm nothing 404s and nothing private is visible.
 
-## Step 5: Keep it live each semester
+## Step 4: Keep it live each semester
 
 Note what you'll need to update each term (dates, office hours link, semester-specific policy language), regardless of where your course site is published.
 
@@ -36,7 +32,6 @@ Note what you'll need to update each term (dates, office hours link, semester-sp
 
 <ul class="checklist">
 <li>Leak check complete; no private content in <code>course-site</code></li>
-<li>Three Hard Rules re-confirmed</li>
 <li>Course site published or exported however you've chosen to share it, and verified</li>
 <li>Notes on what to update each semester</li>
 </ul>

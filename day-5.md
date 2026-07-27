@@ -15,7 +15,7 @@ title: Day 5
 | 11:15 AM – 12:00 PM | Building your 90-day implementation plan |
 | 12:30 – 1:30 PM | Lunch |
 | 1:30 – 2:00 PM | Using NAIRR resources beyond this week: continued access & community of practice |
-| 2:00 – 2:30 PM | Program evaluation |
+| 2:00 – 2:30 PM | Program evaluation, led by Dr. Mi'Kayla Newell |
 | 2:30 – 2:55 PM | Before program ends: final checklist review |
 | 2:55 – 3:00 PM | Closing remarks & group picture |
 | Evening | [Beach day](#evening) |
@@ -26,7 +26,7 @@ title: Day 5
 
 Publishing via GitHub Pages is one way to share your finished course site, not a requirement; you can just as easily export or hand off the material to Google Classroom, Canvas, Blackboard, or whatever LMS your institution already uses.
 
-If you do want it live on GitHub Pages: before turning anything on, do a pre-publish leak check on `course-site`; confirm no answer keys, grading detail, student data, or private prep notes made it in, and re-check your program's Three Hard Rules with your facilitator. Then: **Settings → Pages** → set source branch (usually `main`) → save. Click through every page once it's live; syllabus, schedule, modules, resources, office hours; and confirm nothing 404s and nothing private is visible.
+If you do want it live on GitHub Pages: before turning anything on, do a pre-publish leak check on `course-site`; confirm no answer keys, grading detail, student data, or private prep notes made it in. Then: **Settings → Pages** → set source branch (usually `main`) → save. Click through every page once it's live; syllabus, schedule, modules, resources, office hours; and confirm nothing 404s and nothing private is visible.
 
 ### Office hours + LMS export
 

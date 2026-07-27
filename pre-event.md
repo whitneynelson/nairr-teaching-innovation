@@ -34,6 +34,16 @@ Everything below is account setup and software installs; no coding required yet.
 <li>Syllabus + policy checklist uploaded to the shared drive</li>
 </ul>
 
+## Which track are you on?
+
+Your application placed you on one of three tracks, which shapes how much of some Builder Guide modules you'll actually need this week:
+
+- **Track I — New Course/Program Design:** building a brand-new course from scratch
+- **Track II — Assignment Development:** you already have a course; you're here to build one (or a few) new or updated assignments, labs, or modules
+- **Track III — Course/Program Revision:** updating an existing course or program more broadly
+
+Module 02 (Day 1 afternoon) will ask which track fits you before diving in; nothing to do with this now, just know it's coming.
+
 ## Reference material
 
 - [Installing Git, VS Code/Antigravity, and setting up your Morehouse Supercomputing Facility account](resources/setup-git-vscode-tacc.html)

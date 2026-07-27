@@ -16,4 +16,4 @@
 | `day-1.md` … `day-5.md` | Each day's schedule, Builder Guide content for that day, and reference material; everything a participant needs for that day in one place |
 | `departure.md` | Departure checklist |
 
-This is the site for the accelerator program itself; separate from `course-site`, which is the template each participant uses to build their own course during the week. Items marked "Coming soon" on the day pages are real gaps in the source material (tracked internally), not broken links.
+This is the site for the accelerator program itself; separate from `course-site`, which is the template each participant uses to build their own course during the week.
