@@ -16,6 +16,8 @@ NAIRR provides access to compute, cloud, and AI resources for qualifying researc
 - [Moving data onto the Morehouse Supercomputing Facility](resources/moving-data-tacc.html)
 - [Dataset discovery: finding domain datasets + building a computational plan/data workflow with AI](resources/dataset-discovery.html)
 - [Sample assignments; starter ideas by discipline](resources/sample-assignments.html)
+- [Launching an idev session on the TAP Analysis Portal](resources/idev-tap-portal.html)
+- [Connecting to Vista: an SSH guide for every platform](resources/connecting-to-vista-ssh.html)
 
 ## Template repos
 

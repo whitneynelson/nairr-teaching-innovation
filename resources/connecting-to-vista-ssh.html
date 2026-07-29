@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connecting to Vista over SSH — Morehouse Supercomputing Facility</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --maroon: #862633;
+      --maroon-deep: #5e1a24;
+      --maroon-tint: #f6ecee;
+      --ink: #101820;
+      --ink-soft: #2c343b;
+      --gray: #a7a8a9;
+      --gray-line: #e4e2e2;
+      --gray-bg: #f7f6f6;
+      --white: #ffffff;
+      --term-bg: #161b20;
+      --term-line: #2a3138;
+      --font-display: 'Oswald', system-ui, sans-serif;
+      --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.65;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---------- Header ---------- */
+    .masthead {
+      background: var(--maroon);
+      background: linear-gradient(160deg, var(--maroon) 0%, var(--maroon-deep) 100%);
+      color: var(--white);
+      padding: 56px 24px 44px;
+    }
+
+    .masthead-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .masthead-brand {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin-bottom: 22px;
+    }
+
+    .brand-mark {
+      height: 88px;
+      width: auto;
+      flex-shrink: 0;
+      background: var(--white);
+      border-radius: 10px;
+      padding: 10px 14px;
+    }
+
+    .masthead-text {
+      min-width: 0;
+    }
+
+    .eyebrow {
+      font-family: var(--font-display);
+      font-weight: 500;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      font-size: .78rem;
+      margin: 0 0 10px;
+      color: rgba(255, 255, 255, .82);
+    }
+
+    .masthead h1 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: clamp(2.1rem, 6vw, 3.4rem);
+      line-height: 1.02;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: .005em;
+    }
+
+    .masthead h1 span {
+      font-weight: 300;
+      display: block;
+      color: rgba(255, 255, 255, .9);
+    }
+
+    .rule {
+      height: 3px;
+      width: 64px;
+      background: var(--white);
+      margin: 22px 0 20px;
+      border: 0;
+    }
+
+    .masthead p.lede {
+      max-width: 60ch;
+      margin: 0;
+      font-size: 1.08rem;
+      color: rgba(255, 255, 255, .92);
+    }
+
+    /* ---------- Jump nav ---------- */
+    nav.jump {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, .94);
+      backdrop-filter: saturate(180%) blur(8px);
+      border-bottom: 1px solid var(--gray-line);
+    }
+
+    .jump-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    nav.jump a {
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-weight: 500;
+      font-size: .7rem;
+      color: var(--ink-soft);
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--gray-line);
+      transition: color .15s, border-color .15s, background .15s;
+    }
+
+    nav.jump a:hover {
+      color: var(--maroon);
+      border-color: var(--maroon-tint);
+      background: var(--maroon-tint);
+    }
+
+    nav.jump a.active {
+      color: var(--white);
+      background: var(--maroon);
+      border-color: var(--maroon);
+    }
+
+    /* ---------- Layout ---------- */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 8px 24px 80px;
+    }
+
+    section {
+      padding-top: 44px;
+      scroll-margin-top: 64px;
+    }
+
+    section>.sec-eyebrow {
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      font-size: .72rem;
+      font-weight: 600;
+      color: var(--maroon);
+      margin: 0 0 6px;
+    }
+
+    h2 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .01em;
+      font-size: 1.9rem;
+      line-height: 1.1;
+      margin: 0 0 4px;
+      color: var(--ink);
+    }
+
+    h3 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 1.32rem;
+      letter-spacing: .01em;
+      margin: 34px 0 10px;
+      color: var(--maroon-deep);
+    }
+
+    h4 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: .95rem;
+      margin: 22px 0 8px;
+      color: var(--ink-soft);
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    a {
+      color: var(--maroon);
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    .section-lede {
+      font-size: 1.06rem;
+      color: var(--ink-soft);
+      margin-bottom: 6px;
+    }
+
+    hr.divider {
+      border: 0;
+      border-top: 1px solid var(--gray-line);
+      margin: 0;
+    }
+
+    /* ---------- Prereq / callouts ---------- */
+    .card {
+      background: var(--gray-bg);
+      border: 1px solid var(--gray-line);
+      border-left: 4px solid var(--maroon);
+      border-radius: 6px;
+      padding: 20px 22px;
+      margin: 18px 0;
+    }
+
+    .card h4 {
+      margin-top: 0;
+      color: var(--maroon-deep);
+    }
+
+    .card.note {
+      background: var(--maroon-tint);
+      border-left-color: var(--maroon);
+    }
+
+    .card ol,
+    .card ul {
+      margin: 6px 0 0;
+      padding-left: 20px;
+    }
+
+    .card li {
+      margin: 7px 0;
+    }
+
+    ol.steps {
+      counter-reset: step;
+      list-style: none;
+      padding: 0;
+      margin: 14px 0 6px;
+    }
+
+    ol.steps>li {
+      position: relative;
+      padding: 2px 0 16px 46px;
+      margin: 0;
+    }
+
+    ol.steps>li::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      background: var(--maroon);
+      color: var(--white);
+      font-family: var(--font-display);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: .95rem;
+    }
+
+    ol.steps>li:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      left: 14px;
+      top: 32px;
+      bottom: 2px;
+      width: 2px;
+      background: var(--gray-line);
+    }
+
+    /* ---------- Terminal blocks ---------- */
+    .term {
+      background: var(--term-bg);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 14px 0 18px;
+      box-shadow: 0 1px 2px rgba(16, 24, 32, .12);
+    }
+
+    .term-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 14px;
+      background: var(--term-line);
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dot.r {
+      background: var(--maroon);
+    }
+
+    .dot.y {
+      background: #c9a13b;
+    }
+
+    .dot.g {
+      background: #6f7d55;
+    }
+
+    .term-label {
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-size: .66rem;
+      color: rgba(255, 255, 255, .6);
+      margin-left: 6px;
+    }
+
+    .copy-btn {
+      margin-left: auto;
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: .64rem;
+      font-weight: 500;
+      background: transparent;
+      color: rgba(255, 255, 255, .7);
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 4px;
+      padding: 4px 10px;
+      cursor: pointer;
+      transition: all .15s;
+    }
+
+    .copy-btn:hover {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, .5);
+    }
+
+    .copy-btn.copied {
+      color: #cfe0bf;
+      border-color: #6f7d55;
+    }
+
+    .term pre {
+      margin: 0;
+      padding: 16px 18px;
+      font-family: var(--font-mono);
+      font-size: .9rem;
+      line-height: 1.6;
+      color: #e9edf0;
+      overflow-x: auto;
+    }
+
+    .term pre .prompt {
+      color: #c98b96;
+      user-select: none;
+    }
+
+    .term pre .comment {
+      color: #7f8a93;
+    }
+
+    code.inline {
+      font-family: var(--font-mono);
+      font-size: .85em;
+      background: var(--gray-bg);
+      border: 1px solid var(--gray-line);
+      padding: 1px 6px;
+      border-radius: 4px;
+      color: var(--maroon-deep);
+      word-break: break-word;
+    }
+
+    /* ---------- Platform tag ---------- */
+    .platform-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-size: .68rem;
+      font-weight: 600;
+      color: var(--maroon);
+      background: var(--maroon-tint);
+      border-radius: 20px;
+      padding: 5px 13px;
+      margin-bottom: 2px;
+    }
+
+    /* ---------- Table ---------- */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: .93rem;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--gray-line);
+      vertical-align: top;
+    }
+
+    thead th {
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: .74rem;
+      font-weight: 600;
+      color: var(--white);
+      background: var(--maroon);
+      border-bottom: none;
+    }
+
+    tbody tr:nth-child(even) {
+      background: var(--gray-bg);
+    }
+
+    td code {
+      font-family: var(--font-mono);
+      font-size: .82em;
+      color: var(--maroon-deep);
+    }
+
+    /* ---------- Help ---------- */
+    .help-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    @media(min-width:640px) {
+      .help-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .help-card {
+      border: 1px solid var(--gray-line);
+      border-radius: 8px;
+      padding: 22px;
+      background: var(--white);
+    }
+
+    .help-card.primary {
+      border-color: var(--maroon);
+      border-width: 1.5px;
+      background: var(--maroon-tint);
+    }
+
+    .help-card .role {
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .68rem;
+      font-weight: 600;
+      color: var(--maroon);
+      margin: 0 0 4px;
+    }
+
+    .help-card .name {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.35rem;
+      margin: 0 0 4px;
+      color: var(--ink);
+    }
+
+    .help-card a {
+      font-weight: 600;
+      word-break: break-word;
+    }
+
+    .ref-list {
+      margin: 14px 0 0;
+      padding-left: 20px;
+    }
+
+    .ref-list li {
+      margin: 8px 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--gray-line);
+      margin-top: 60px;
+      padding-top: 22px;
+      font-size: .85rem;
+      color: var(--gray);
+    }
+
+    footer .fmark {
+      font-family: var(--font-display);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      color: var(--maroon);
+      font-size: .8rem;
+    }
+
+    /* ---------- Print ---------- */
+    @media print {
+
+      nav.jump,
+      .copy-btn {
+        display: none !important;
+      }
+
+      body {
+        font-size: 11.5pt;
+      }
+
+      .masthead {
+        background: none !important;
+        color: var(--ink);
+        padding: 0 0 12px;
+        border-bottom: 3px solid var(--maroon);
+      }
+
+      .masthead h1,
+      .masthead h1 span {
+        color: var(--ink);
+      }
+
+      .eyebrow,
+      .masthead p.lede {
+        color: var(--ink-soft);
+      }
+
+      .brand-mark {
+        background: none;
+        padding: 0;
+      }
+
+      .term {
+        box-shadow: none;
+        border: 1px solid #999;
+      }
+
+      .term-bar {
+        background: #eee;
+      }
+
+      .term-label {
+        color: #555;
+      }
+
+      .term pre {
+        background: #fff;
+        color: #111;
+      }
+
+      .term pre .prompt {
+        color: #862633;
+      }
+
+      .term pre .comment {
+        color: #555;
+      }
+
+      section {
+        page-break-inside: auto;
+      }
+
+      h2,
+      h3 {
+        page-break-after: avoid;
+      }
+
+      a {
+        color: var(--ink);
+        text-decoration: underline;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="masthead-brand">
+        <img class="brand-mark" src="../assets/logo.png" alt="Morehouse Supercomputing Facility">
+        <div class="masthead-text">
+          <p class="eyebrow">Morehouse Supercomputing Facility</p>
+          <h1>Connecting to Vista <span>An SSH guide for every platform</span></h1>
+        </div>
+      </div>
+      <hr class="rule">
+      <p class="lede">How to open a secure connection to Vista (TACC) from Windows, macOS, or Linux — including the fix
+        for the port&nbsp;22 error many Windows users hit on their first try.</p>
+    </div>
+  </header>
+
+  <nav class="jump" aria-label="Section navigation">
+    <div class="jump-inner">
+      <a href="#start">Before you start</a>
+      <a href="#windows">Windows</a>
+      <a href="#mac">macOS</a>
+      <a href="#linux">Linux</a>
+      <a href="#login">Password &amp; MFA</a>
+      <a href="#troubleshoot">Troubleshooting</a>
+      <a href="#help">Get help</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="start">
+      <p class="sec-eyebrow">Section 01</p>
+      <h2>Before you start</h2>
+      <p class="section-lede">Confirm all four of these first. A missing allocation or unset MFA is the most common
+        reason a login fails even when the command is correct.</p>
+      <div class="card">
+        <h4>Your checklist</h4>
+        <ol>
+          <li><strong>You have a TACC account.</strong> If not, create one at <a href="https://tacc.utexas.edu/portal"
+              target="_blank" rel="noopener">tacc.utexas.edu/portal</a>.</li>
+          <li><strong>You are on the Vista allocation.</strong> If your project isn't attached to Vista, your password
+            will be rejected. Check under <em>Projects &amp; Allocations</em> in the TACC Portal.</li>
+          <li><strong>Multi-Factor Authentication (MFA) is paired.</strong> Vista requires it every login. Set it up
+            under <em>Manage Account</em> in the TACC Portal (<a href="https://docs.tacc.utexas.edu/basics/mfa"
+              target="_blank" rel="noopener">MFA guide</a>).</li>
+          <li><strong>You know your TACC username and password</strong>, and your phone or authenticator app is within
+            reach.</li>
+        </ol>
+      </div>
+      <p>Everywhere in this guide, replace <code class="inline">your_username</code> with your real TACC username. The
+        address you connect to is always the same:</p>
+      <div class="term">
+        <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span
+            class="term-label">host</span></div>
+        <pre>vista.tacc.utexas.edu</pre>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="windows">
+      <p class="sec-eyebrow">Section 02</p>
+      <span class="platform-tag">Windows</span>
+      <h2>Connecting from Windows</h2>
+      <p class="section-lede">Windows ships with its own SSH program, but on many campus machines it fails the secure
+        "handshake" with TACC and reports a <strong>port&nbsp;22</strong> error. Think of two people who speak the same
+        language but can't agree on which greeting to use — the conversation never starts. The two tools below bring
+        their own SSH software and connect cleanly on the same computer and network, so this is not a firewall problem
+        on your end.</p>
+      <p>Use <strong>either</strong> Git Bash or PuTTY. You only need one.</p>
+
+      <h3>Option A — Git Bash (recommended)</h3>
+      <p>Git Bash gives you a Linux-style window on Windows, so your steps match the Mac and Linux instructions closely.
+      </p>
+      <ol class="steps">
+        <li>
+          <strong>Install Git for Windows.</strong> Download from <a href="https://git-scm.com/download/win"
+            target="_blank" rel="noopener">git-scm.com/download/win</a>, run the installer, and click <em>Next</em>
+          through the defaults, then <em>Install</em>. The defaults are fine.
+        </li>
+        <li>
+          <strong>Open Git Bash.</strong> Click <em>Start</em>, type <code class="inline">Git Bash</code>, and open it.
+          A dark window with a blinking cursor appears — that's your command line.
+        </li>
+        <li>
+          <strong>Connect to Vista.</strong> Type this and press <em>Enter</em>:
+          <div class="term">
+            <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span
+                class="term-label">Git Bash</span><button class="copy-btn" type="button">Copy</button></div>
+            <pre><span class="prompt">$ </span>ssh your_username@vista.tacc.utexas.edu</pre>
+          </div>
+        </li>
+        <li>
+          <strong>Accept the security prompt (first time only).</strong> You'll see a message about the host's
+          authenticity ending in a yes/no question. Type <code class="inline">yes</code> and press <em>Enter</em>. You
+          won't see this again from the same computer.
+        </li>
+        <li>
+          <strong>Enter your password and MFA code.</strong> See the <a href="#login">Password &amp; MFA</a> section
+          below — the flow is identical on every platform.
+        </li>
+      </ol>
+      <p>To log out, type <code class="inline">exit</code> and press <em>Enter</em>.</p>
+
+      <h3>Option B — PuTTY</h3>
+      <p>PuTTY is a small point-and-click program. Nothing to type until you're already connected.</p>
+      <ol class="steps">
+        <li>
+          <strong>Install PuTTY.</strong> Go to <a href="https://www.putty.org" target="_blank"
+            rel="noopener">putty.org</a>, open the official download page, and get the <em>64-bit MSI installer</em>.
+          Run it and accept the defaults.
+        </li>
+        <li>
+          <strong>Configure the connection.</strong> Open PuTTY. In <em>Host Name</em>, enter <code
+            class="inline">vista.tacc.utexas.edu</code>. Leave <em>Port</em> at <code class="inline">22</code> and
+          <em>Connection type</em> on <strong>SSH</strong>.
+        </li>
+        <li>
+          <strong>Save it for next time (optional).</strong> Type <code class="inline">Vista</code> in <em>Saved
+            Sessions</em> and click <em>Save</em>. Later, just double-click <em>Vista</em> to reload these settings.
+        </li>
+        <li>
+          <strong>Click Open.</strong> A terminal window appears. The first time, a <em>PuTTY Security Alert</em> about
+          the host key pops up — click <em>Accept</em>. One-time step per computer.
+        </li>
+        <li>
+          <strong>Log in.</strong> At <code class="inline">login as:</code> type your TACC username. Then enter your
+          password and MFA code as described in <a href="#login">Password &amp; MFA</a> below.
+        </li>
+      </ol>
+      <p>To log out, type <code class="inline">exit</code> or close the window.</p>
+
+      <div class="card note">
+        <h4>Prefer PowerShell or Command Prompt?</h4>
+        <p style="margin:0;">You can often get past the port&nbsp;22 error by telling the built-in client which security
+          algorithm to use. Add the <code class="inline">-m hmac-sha2-512</code> flag:</p>
+        <div class="term" style="margin-bottom:0;">
+          <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span
+              class="term-label">PowerShell</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>ssh -m hmac-sha2-512 your_username@vista.tacc.utexas.edu</pre>
+        </div>
+        <p style="margin:12px 0 0;">This is a documented TACC workaround. If it still fails, use Git Bash or PuTTY —
+          those remain the most dependable options.</p>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="mac">
+      <p class="sec-eyebrow">Section 03</p>
+      <span class="platform-tag">macOS</span>
+      <h2>Connecting from a Mac</h2>
+      <p class="section-lede">macOS has a full SSH client built in, so there's nothing to install and no port&nbsp;22
+        workaround needed. You'll use the Terminal app.</p>
+      <ol class="steps">
+        <li>
+          <strong>Open Terminal.</strong> Press <code class="inline">Cmd + Space</code> to open Spotlight, type <code
+            class="inline">Terminal</code>, and press <em>Enter</em>. (It also lives in <em>Applications → Utilities →
+            Terminal</em>.)
+        </li>
+        <li>
+          <strong>Connect to Vista.</strong> Type this and press <em>Enter</em>:
+          <div class="term">
+            <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span
+                class="term-label">Terminal</span><button class="copy-btn" type="button">Copy</button></div>
+            <pre><span class="prompt">% </span>ssh your_username@vista.tacc.utexas.edu</pre>
+          </div>
+        </li>
+        <li>
+          <strong>Accept the security prompt (first time only).</strong> Type <code class="inline">yes</code> at the
+          authenticity question and press <em>Enter</em>.
+        </li>
+        <li>
+          <strong>Enter your password and MFA code.</strong> Follow the <a href="#login">Password &amp; MFA</a> section
+          below.
+        </li>
+      </ol>
+      <p>To log out, type <code class="inline">exit</code> and press <em>Enter</em>. If you need graphical applications
+        later, connect with <code class="inline">ssh -X your_username@vista.tacc.utexas.edu</code>.</p>
+    </section>
+
+    <hr class="divider">
+
+    <section id="linux">
+      <p class="sec-eyebrow">Section 04</p>
+      <span class="platform-tag">Linux</span>
+      <h2>Connecting from Linux</h2>
+      <p class="section-lede">Every Linux distribution includes an SSH client. You'll use your terminal application
+        directly.</p>
+      <ol class="steps">
+        <li>
+          <strong>Open a terminal.</strong> On most desktops, press <code class="inline">Ctrl + Alt + T</code>, or find
+          <em>Terminal</em> in your applications menu.
+        </li>
+        <li>
+          <strong>Connect to Vista.</strong> Type this and press <em>Enter</em>:
+          <div class="term">
+            <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span
+                class="term-label">Terminal</span><button class="copy-btn" type="button">Copy</button></div>
+            <pre><span class="prompt">$ </span>ssh your_username@vista.tacc.utexas.edu</pre>
+          </div>
+        </li>
+        <li>
+          <strong>Accept the security prompt (first time only).</strong> Type <code class="inline">yes</code> and press
+          <em>Enter</em>.
+        </li>
+        <li>
+          <strong>Enter your password and MFA code.</strong> Follow the <a href="#login">Password &amp; MFA</a> section
+          below.
+        </li>
+      </ol>
+      <p>To log out, type <code class="inline">exit</code>. For graphical applications, add <code
+          class="inline">-X</code>: <code class="inline">ssh -X your_username@vista.tacc.utexas.edu</code>.</p>
+    </section>
+
+    <hr class="divider">
+
+    <section id="login">
+      <p class="sec-eyebrow">Section 05</p>
+      <h2>The password &amp; MFA prompt</h2>
+      <p class="section-lede">Once your connection reaches Vista, the login steps are the same on Windows, macOS, and
+        Linux.</p>
+      <div class="card">
+        <ol>
+          <li><strong>Password.</strong> At the password prompt, type your <strong>TACC portal password</strong> and
+            press <em>Enter</em>. <strong>Nothing appears on screen as you type</strong> — no dots, no stars, no moving
+            cursor. This is normal and intentional; the window is not frozen. Type carefully, then press <em>Enter</em>.
+          </li>
+          <li><strong>MFA code.</strong> At the <em>TACC Token Code</em> prompt, type the <strong>6-digit code</strong>
+            from your authenticator app (or the code sent to your phone) and press <em>Enter</em>. Codes refresh every
+            30 seconds, so enter a fresh one.</li>
+        </ol>
+      </div>
+      <p>You're in when you see the Vista welcome banner and a prompt ending in something like <code
+          class="inline">login1$</code> or <code class="inline">login2$</code>. A few quick checks:</p>
+      <div class="term">
+        <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span
+            class="term-label">Vista — login node</span><button class="copy-btn" type="button">Copy</button></div>
+        <pre><span class="prompt">login1$ </span>whoami     <span class="comment"># your username</span>
+<span class="prompt">login1$ </span>pwd        <span class="comment"># your home directory</span>
+<span class="prompt">login1$ </span>hostname   <span class="comment"># which login node you landed on</span></pre>
+      </div>
+      <div class="card note">
+        <h4>One important habit</h4>
+        <p style="margin:0;">The login nodes are shared by everyone. Don't run heavy computations directly on them —
+          submit work to the queue with Slurm (<code class="inline">sbatch</code>) or start an interactive session with
+          <code class="inline">idev</code>. See the <a href="https://docs.tacc.utexas.edu/hpc/vista" target="_blank"
+            rel="noopener">Vista User Guide</a> for details.</p>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="troubleshoot">
+      <p class="sec-eyebrow">Section 06</p>
+      <h2>Quick troubleshooting</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>What you see</th>
+              <th>Most likely cause</th>
+              <th>What to do</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Port 22 error in PowerShell / Command Prompt</td>
+              <td>Built-in Windows SSH handshake issue</td>
+              <td>Use Git Bash or PuTTY, or add <code>-m hmac-sha2-512</code></td>
+            </tr>
+            <tr>
+              <td>Password prompt seems frozen while typing</td>
+              <td>Nothing wrong — password entry is always invisible</td>
+              <td>Keep typing, then press Enter</td>
+            </tr>
+            <tr>
+              <td>"Permission denied" / password rejected</td>
+              <td>Wrong password, or you're not on the Vista allocation</td>
+              <td>Reset your password in the TACC Portal; confirm your project is on Vista</td>
+            </tr>
+            <tr>
+              <td>No MFA prompt, or code rejected</td>
+              <td>MFA not paired, or an expired code</td>
+              <td>Set up / re-check MFA under <em>Manage Account</em>; use a fresh 30-second code</td>
+            </tr>
+            <tr>
+              <td>Connects, then drops immediately</td>
+              <td>Often an account or allocation status issue</td>
+              <td>Check account status in the TACC Portal; open a ticket if it persists</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h4>Need to file a ticket?</h4>
+      <p>Run the connection with verbose output and include what it prints:</p>
+      <div class="term">
+        <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span
+            class="term-label">verbose</span><button class="copy-btn" type="button">Copy</button></div>
+        <pre>ssh -vvv your_username@vista.tacc.utexas.edu</pre>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="help">
+      <p class="sec-eyebrow">Section 07</p>
+      <h2>Where to get help</h2>
+      <p class="section-lede">For account, allocation, and facility questions, start with the Morehouse Supercomputing
+        Facility.</p>
+      <div class="help-grid">
+        <div class="help-card primary">
+          <p class="role">Deputy Director</p>
+          <p class="name">Dr. Ashley Scruse</p>
+          <p style="margin:0;"><a href="mailto:ashley.scruse@morehouse.edu">Ashley.scruse@morehouse.edu</a></p>
+        </div>
+        <div class="help-card">
+          <p class="role">CBPC — HPC Resources</p>
+          <p class="name">Facility resources</p>
+          <p style="margin:0;"><a href="https://www.bpccenter.org/current-programs/cbpc-hpc-resources" target="_blank"
+              rel="noopener">bpccenter.org/current-programs/cbpc-hpc-resources</a></p>
+        </div>
+      </div>
+      <h4>TACC reference documentation</h4>
+      <ul class="ref-list">
+        <li><a href="https://docs.tacc.utexas.edu/hpc/vista" target="_blank" rel="noopener">Vista User Guide</a> — full
+          system reference</li>
+        <li><a href="https://docs.tacc.utexas.edu/basics/mfa" target="_blank" rel="noopener">Multi-Factor Authentication
+            setup</a></li>
+        <li><a href="https://docs.tacc.utexas.edu/basics/accounts" target="_blank" rel="noopener">Managing your TACC
+            account</a> — including Windows login notes</li>
+        <li><a href="https://tacc.utexas.edu/about/help" target="_blank" rel="noopener">TACC help ticket</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p class="fmark">Morehouse Supercomputing Facility</p>
+      <p>New-user SSH connection guide for Vista (TACC). Connection details reflect the TACC Vista User Guide. Replace
+        <code class="inline">your_username</code> with your TACC username throughout.</p>
+    </footer>
+
+  </main>
+
+  <script>
+    // Copy-to-clipboard for command blocks
+    document.querySelectorAll('.copy-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var pre = btn.closest('.term').querySelector('pre');
+        // strip leading prompt characters and trailing inline comments for a clean paste
+        var text = pre.innerText.split('\n').map(function (line) {
+          return line.replace(/^(login1\$|\$|%)\s?/, '').replace(/\s+#.*$/, '');
+        }).join('\n').trim();
+        navigator.clipboard.writeText(text).then(function () {
+          var original = btn.textContent;
+          btn.textContent = 'Copied';
+          btn.classList.add('copied');
+          setTimeout(function () { btn.textContent = original; btn.classList.remove('copied'); }, 1500);
+        });
+      });
+    });
+
+    // Active section highlight in jump nav
+    var links = Array.prototype.slice.call(document.querySelectorAll('nav.jump a'));
+    var map = {};
+    links.forEach(function (l) { map[l.getAttribute('href').slice(1)] = l; });
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          links.forEach(function (l) { l.classList.remove('active'); });
+          if (map[e.target.id]) map[e.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    document.querySelectorAll('main section').forEach(function (s) { obs.observe(s); });
+  </script>
+
+</body>
+
+</html>
