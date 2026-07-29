@@ -25,20 +25,10 @@ We're using the CDC's [Behavioral Risk Factor Surveillance System (BRFSS)](https
 
 Ask your AI coding assistant to check for you; there's no need to open a terminal yourself for this, or anything else in this walkthrough:
 
-> *"Check whether I can run a Jupyter notebook in this editor — is Python installed, and is the Jupyter extension set up? If anything's missing, walk me through installing it."*
+> *"Check whether I can run a Jupyter notebook in this editor — is Python installed, and is the Jupyter extension set up? If anything's missing, help me through install it."*
 
 Claude can check and install what's needed on its own; you're approving what it does, not typing commands yourself.
 
-### Don't have Python?
-
-Ask Claude to:
-
-- **Mac:**
-      > *"Download Python 3 on my Mac."*
-- **Windows:**
-      > *"Download Python 3 on my Windows PC."*
-
-Either way, also ask: *"Check whether the Jupyter extension is set up in my editor, and install it if not."*
 
 ### 2. Prompt your AI coding assistant
 
