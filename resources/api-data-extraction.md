@@ -29,8 +29,13 @@ Ask your AI coding assistant to check for you rather than doing this yourself: i
 
 Claude will run `python3 --version` and read you the result.
 
-- **Mac:** this almost always comes back with a version already; it ships with the same Xcode Command Line Tools install that gave you `git`.
-- **Windows:** if it's missing, ask Claude: *"Walk me through installing Python 3 on Windows."* It'll point you to [python.org](https://www.python.org/downloads/) and remind you to check "Add python.exe to PATH" during setup, the step people most often miss.
+### Don't have Python? 
+Ask Claude to:
+
+- **Mac:**
+      > *"Download Python 3 on my Mac."* 
+- **Windows:**
+      > *"Download Python 3 on my Windows PC."* 
 
 ### 2. Prompt your AI coding assistant
 
