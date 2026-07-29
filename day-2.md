@@ -16,7 +16,7 @@ title: Day 2
 | 12:00 – 12:30 PM | Draft your syllabus |
 | 12:30 – 1:30 PM | Lunch |
 | 1:30 – 2:00 PM | HPC with VISTA (Architecture, Filesystem, and SSH) |
-| 2:00 – 2:30 PM | Module 1: Getting acclimated via Tapis |
+| 2:00 – 2:30 PM | Module 1: Getting acclimated via TAP |
 | 2:30 – 3:00 PM | Module Builder, Part 1: lecture outline + slide deck |
 | 3:00 – 4:00 PM | Faculty Fellows Panel II: Implementing, Evaluating, and Scaling AI Education; panelists: [Dr. Debanjali Banerjee](#debanjali-banerjee), [Dr. Mia Champion](#mia-champion), [Dr. Vanessa D'Amario](#vanessa-damario), [Dr. Ananya Jana](#ananya-jana) |
 | 5:30 PM | [Cielo Beach Club](#evening) |
@@ -33,11 +33,11 @@ A 30-minute session; this produces a *draft skeleton*, not a finished syllabus. 
 
 ### HPC with VISTA: architecture, filesystem, and SSH
 
-An orientation to the Morehouse Supercomputing Facility's Vista system before you start running anything on it: how the system is organized (login nodes vs. compute nodes), how the filesystem is laid out (home, scratch, and work directories, and what belongs where), and how to connect over SSH. This is the foundation the Tapis session right after builds on.
+An orientation to the Morehouse Supercomputing Facility's Vista system before you start running anything on it: how the system is organized (login nodes vs. compute nodes), how the filesystem is laid out (home, scratch, and work directories, and what belongs where), and how to connect over SSH. This is the foundation the TAP session right after builds on.
 
-### Module 1: Getting acclimated via Tapis
+### Module 1: Getting acclimated via TAP
 
-Hands-on introduction to accessing HPC resources on the Morehouse Supercomputing Facility via Tapis. Tapis is the layer that lets you (and your students) run jobs on the supercomputer without managing the underlying infrastructure directly; it's the interface between "I want to run this script" and the actual hardware. See [Accessing the Morehouse Supercomputing Facility via TAPIS](resources/accessing-tapis.html) for the full request-to-walkthrough path.
+Hands-on introduction to launching interactive sessions on the Morehouse Supercomputing Facility through the TAP Analysis Portal (tap.tacc.utexas.edu). TAP is the point-and-click way to get an `idev` session on a compute node right from your browser; no command line required to get started. See [Launching an idev Session on the TAP Analysis Portal](resources/idev-tap-portal.html) for the full walkthrough.
 
 ### Module Builder, Part 1: lecture outline + slide deck
 
@@ -55,8 +55,7 @@ Pick **one module** from your curriculum map to build fully, end to end; this be
 
 ## Reference material
 
-- [Accessing the Morehouse Supercomputing Facility via TAPIS](resources/accessing-tapis.html)
-- [TAPIS workflows reference](https://ashleyscruse.github.io/nairr-research/03-Compute/05-tapis-workflows/)
+- [Launching an idev Session on the TAP Analysis Portal](resources/idev-tap-portal.html)
 
 ## This evening {#evening}
 

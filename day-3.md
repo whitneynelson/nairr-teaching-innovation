@@ -12,18 +12,18 @@ title: Day 3
 |:---|:---|
 | 10:00 – 10:15 AM | Daily agenda review |
 | 10:15 – 10:30 AM | Dataset discovery for HPC; where to find data in your domain |
-| 10:30 – 11:00 AM | Using an AI coding assistant for API data extraction, moving data onto HPC |
-| 11:00 AM – 12:30 PM | Module Builder, Part 2: quiz + assignment supplementary material |
+| 10:30 – 11:30 AM | Accessing Morehouse TAPIS, Using an AI coding assistant for API data extraction, moving data onto HPC |
+| 11:30 AM – 12:30 PM | Module Builder, Part 2: quiz + assignment supplementary material |
 | 12:30 – 1:30 PM | Lunch |
-| 1:30 – 2:30 PM | HPC Acclimation, Module 2: running your Jupyter notebook via Tapis (idev). Module 3: monitoring jobs & reading output |
+| 1:30 – 2:30 PM | HPC Acclimation, Module 2: running your Jupyter notebook via TAP (idev). Module 3: monitoring jobs & reading output |
 | 2:30 – 3:00 PM | Build your grading scale & rubrics |
 | Evening | [Souvenir shopping](#evening) |
 
 ## What you'll build today
 
-### Moving data onto HPC
+### Accessing Morehouse TAPIS + moving data onto HPC
 
-The technical backbone for the assignment you're about to build supplementary material for: using an AI coding assistant for API data extraction, then moving that data onto HPC.
+The technical backbone for the assignment you're about to build supplementary material for: requesting/logging into Morehouse TAPIS, using an AI coding assistant for API data extraction, then moving that data onto HPC. See [Accessing the Morehouse Supercomputing Facility via TAPIS](resources/accessing-tapis.html) and [API Data Extraction with Your AI Coding Assistant](resources/api-data-extraction.html) for the full walkthroughs.
 
 ### Module Builder, Part 2: quiz + assignment material
 
@@ -34,7 +34,7 @@ Continuing the module you started on Day 2:
 3. Build the assignment's supplementary material (datasets, reference links, setup instructions) into your public course site. If you already have an assignment written for this module, upload or paste it and have your AI coding assistant adapt it rather than drafting from nothing.
 4. If you code, ask your AI coding assistant to scaffold the actual assignment notebook/script now. If you don't, describe the assignment goal and dataset and have it draft the starter notebook/script *and* a plain-language explanation you can hand to students.
 
-### HPC Acclimation, Modules 2–3: running Jupyter via Tapis, monitoring jobs
+### HPC Acclimation, Modules 2–3: running Jupyter via TAP, monitoring jobs
 
 Hands-on: launch an interactive Jupyter session via `idev`, submit it, and learn to read job output and monitor status. `idev` starts an interactive session on the supercomputer, like getting your own temporary terminal on the big machine instead of just submitting a job and waiting; it's useful for testing something quickly before running it at full scale.
 
@@ -53,6 +53,7 @@ A fast session; set the direction here, finish independently if time runs short.
 
 ## Reference material
 
+- [Accessing the Morehouse Supercomputing Facility via TAPIS](resources/accessing-tapis.html)
 - [TAPIS workflows reference](https://ashleyscruse.github.io/nairr-research/03-Compute/05-tapis-workflows/)
 - [Moving data onto the Morehouse Supercomputing Facility: copying, transferring, and running scripts on large datasets](resources/moving-data-tacc.html)
 - [Dataset discovery: finding domain datasets + building a computational plan/data workflow with AI](resources/dataset-discovery.html)
