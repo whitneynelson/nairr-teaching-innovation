@@ -4,7 +4,7 @@ title: Day 3
 
 <span class="day-pill">Day 3 · Wednesday, July 29</span>
 
-# AI for Calculations, Grading Scale + Module Builder Continues
+# AI for Getting Data, Grading Scale + Module Builder Continues
 
 ## Schedule
 
