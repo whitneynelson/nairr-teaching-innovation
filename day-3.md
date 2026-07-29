@@ -56,6 +56,8 @@ A fast session; set the direction here, finish independently if time runs short.
 - [TAPIS workflows reference](https://ashleyscruse.github.io/nairr-research/03-Compute/05-tapis-workflows/)
 - [Moving data onto the Morehouse Supercomputing Facility: copying, transferring, and running scripts on large datasets](resources/moving-data-tacc.html)
 - [Dataset discovery: finding domain datasets + building a computational plan/data workflow with AI](resources/dataset-discovery.html)
+- [API data extraction with your AI coding assistant](resources/api-data-extraction.html)
+- [Launching an idev session on the TAP Analysis Portal](resources/idev-tap-portal.html)
 
 ## This evening {#evening}
 
