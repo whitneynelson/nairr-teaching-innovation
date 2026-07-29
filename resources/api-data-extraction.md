@@ -6,10 +6,10 @@ title: API Data Extraction with Your AI Coding Assistant
 
 <div class="card">
 
-Two walkthroughs, same skill at two different scales, both using plain-language prompts to your AI coding assistant, no prior coding required.
+Two walkthroughs, same skill at two different scales, both using plain-language prompts to your AI coding assistant, no prior coding required, and no terminal: Claude writes the code, you run it by clicking through a Jupyter notebook.
 
-- **Part 1** pulls a small, keyless dataset on your laptop, then uploads it to the Morehouse Supercomputing Facility through your browser (Tapis).
-- **Part 2** pulls a much larger, API-key-gated dataset, but runs the extraction directly on the cluster; you paste the script into an interactive `idev` session on the [TAP Analysis Portal](idev-tap-portal.html) rather than downloading it to your laptop first.
+- **Part 1** pulls a small, keyless dataset in a notebook on your laptop, then uploads the result to the Morehouse Supercomputing Facility through your browser (Tapis).
+- **Part 2** pulls a much larger, API-key-gated dataset, but runs the extraction directly on the cluster; you run it in a Jupyter notebook launched via the [TAP Analysis Portal](idev-tap-portal.html) rather than downloading it to your laptop first.
 
 That contrast is the point: small data is fine to handle locally and hand off; data at real HPC scale is faster and more reliable to pull straight from the cluster's own connection than to download and re-upload.
 
@@ -21,41 +21,44 @@ That contrast is the point: small data is fine to handle locally and hand off; d
 
 We're using the CDC's [Behavioral Risk Factor Surveillance System (BRFSS)](https://www.cdc.gov/brfss/data_tools.htm), specifically the "How is your general health?" question, self-reported by state for 2023 (Excellent / Very good / Good / Fair / Poor). It's public, requires no account, no API key, and no sign-up; the API returns plain JSON from a single URL.
 
-### 1. Quick check: is Python installed?
+### 1. Quick check: can you run a Jupyter notebook?
 
-Ask your AI coding assistant to check for you rather than doing this yourself: in your editor's terminal (VS Code or Antigravity), ask Claude:
+Ask your AI coding assistant to check for you; there's no need to open a terminal yourself for this, or anything else in this walkthrough:
 
-> *"Check whether Python 3 is installed on my computer, and tell me the version."*
+> *"Check whether I can run a Jupyter notebook in this editor — is Python installed, and is the Jupyter extension set up? If anything's missing, walk me through installing it."*
 
-Claude will run `python3 --version` and read you the result.
+Claude can check and install what's needed on its own; you're approving what it does, not typing commands yourself.
 
-### Don't have Python? 
+### Don't have Python?
+
 Ask Claude to:
 
 - **Mac:**
-      > *"Download Python 3 on my Mac."* 
+      > *"Download Python 3 on my Mac."*
 - **Windows:**
-      > *"Download Python 3 on my Windows PC."* 
+      > *"Download Python 3 on my Windows PC."*
+
+Either way, also ask: *"Check whether the Jupyter extension is set up in my editor, and install it if not."*
 
 ### 2. Prompt your AI coding assistant
 
 Open a new chat with Claude (Claude Code extension in your editor) and describe the task in plain language; something like:
 
-> *"I want a short Python script that pulls public health survey data from a government API and saves it to a CSV file. Don't use any extra installed packages — just Python's built-in libraries. Here's the exact URL to call:*
+> *"I want a Jupyter notebook, not a plain script, that pulls public health survey data from a government API and saves it to a CSV file. Put everything in one cell I can run by clicking the Run button. Don't use any extra installed packages — just Python's built-in libraries. Here's the exact URL to call:*
 >
 > *`https://data.cdc.gov/resource/dttw-5yxu.json?topic=Overall%20Health&year=2023&break_out=Overall`*
 >
-> *It returns JSON. Please write a script that:*
-> 1. *Requests that URL*
-> 2. *Prints how many records came back*
-> 3. *Saves the records to a CSV file called `brfss_general_health_2023.csv`*
-> 4. *Prints the first 3 rows so I can see what came back*
+> *It returns JSON. The cell should:*
+> 1. *Request that URL*
+> 2. *Print how many records came back*
+> 3. *Save the records to a CSV file called `brfss_general_health_2023.csv`*
+> 4. *Print the first 3 rows so I can see what came back*
 >
-> *Explain what each part of the script does in plain language, like I've never coded before."*
+> *Explain what each part does in plain language, like I've never coded before."*
 
 ### 3. What you should get back
 
-Claude's script may differ slightly in style from what's below, that's fine; what matters is it hits the same URL and produces the same kind of output. Here's a tested, working version for reference, in case you want to compare or paste it directly:
+Claude's code may differ slightly in style from what's below, that's fine; what matters is it hits the same URL and produces the same kind of output. Here's a tested, working version for reference, in case you want to compare or paste it into your notebook cell directly:
 
 ```python
 import csv
@@ -97,15 +100,9 @@ for row in data[:3]:
 
 Ask Claude to explain any line you're curious about; that's a better use of the time than trying to memorize the syntax yourself.
 
-### 4. Run it and confirm, locally
+### 4. Run it and confirm, in the notebook
 
-Ask Claude to run the script for you, or run it yourself in the terminal:
-
-```bash
-python3 extract_brfss_data.py
-```
-
-You should see something like:
+Open `extract_brfss_data.ipynb` in your editor and click the **Run** button (▶) on the cell. The output prints directly below it:
 
 ```
 Requesting: https://data.cdc.gov/resource/dttw-5yxu.json?topic=Overall%20Health&year=2023&break_out=Overall
@@ -118,7 +115,7 @@ First 3 rows:
   Alaska: Good - 34.4%
 ```
 
-270 rows is expected: 5 responses (Excellent, Very good, Good, Fair, Poor) across roughly 54 U.S. states and territories. If your row count is way off from that, ask Claude to help you check the URL and try again before moving on.
+270 rows is expected: 5 responses (Excellent, Very good, Good, Fair, Poor) across roughly 54 U.S. states and territories. If your row count is way off from that, ask Claude to help you debug straight from the notebook's error output before moving on.
 
 ### 5. Upload the file via TAPIS
 
@@ -141,8 +138,8 @@ Refresh the file listing and confirm `brfss_general_health_2023.csv` appears wit
 ### Part 1 checklist
 
 <ul class="checklist">
-<li>Python 3 confirmed installed (or installed this session)</li>
-<li>Extraction script written (by you and Claude, or copied from above) and run successfully</li>
+<li>Confirmed (via Claude) that Python and Jupyter are ready in your editor</li>
+<li>Notebook written (by you and Claude, or copied from above) and run successfully by clicking Run</li>
 <li><code>brfss_general_health_2023.csv</code> exists locally with 270 data rows</li>
 <li>Logged into <a href="https://morehouse.tapis.io/#/login">morehouse.tapis.io</a> and authenticated Vista with TMS Keys</li>
 <li>File uploaded and visible in the Vista file browser with a matching file size</li>
@@ -164,117 +161,215 @@ In your browser, go to:
 https://aqs.epa.gov/data/api/signup?email=YOUR_EMAIL@example.edu
 ```
 
-replacing the email with your real address. This is a single automated request; there's no application or approval wait. Your API key arrives by email within a few minutes. Keep the email and key handy, you'll need both for every request.
+replacing the email with your real address. This is a single automated request; there's no application or approval wait.
+
+<div class="card">
+
+**Verify your email before trying to use the key.** AQS sends a verification email to the address you signed up with; the key doesn't work until you've confirmed it. If your first request fails with an authentication error right after signing up, this is the first thing to check, not your code.
+
+</div>
+
+Keep the email and key handy, you'll need both for every request; Step 5 below has you save them to a file rather than typing them into the notebook itself.
 
 ### 2. Prompt your AI coding assistant
 
-Back on your laptop, before heading to TAP, ask Claude to write the script (you'll paste it into the cluster terminal in Step 4, so write it here where it's easiest to iterate):
+Back on your laptop, before heading to TAP, ask Claude to write the notebook (you'll run it on the cluster in Step 6, so write it here where it's easiest to iterate):
 
-> *"I want a Python script that pulls hourly air quality data from the EPA's public AQS API and saves it to a CSV file. Use only Python's built-in libraries, no extra installs. My email and API key will be set as environment variables called `AQS_EMAIL` and `AQS_KEY` — don't hardcode them in the script. The script should:*
-> 1. *Loop over this list of state FIPS codes: `06` (California), `48` (Texas), `36` (New York), `17` (Illinois), `42` (Pennsylvania), `12` (Florida)*
-> 2. *For each state, call `https://aqs.epa.gov/data/api/sampleData/byState` with `param=44201` (ozone), `bdate=20230101`, `edate=20231231`, plus my email, key, and the state code*
-> 3. *Print how many rows came back for each state as it goes*
-> 4. *Append every state's rows into a single CSV file called `aqs_ozone_2023.csv`*
-> 5. *Wait a few seconds between requests so I'm not hammering a shared public API*
-> 6. *At the end, print the total row count*
+> *"I want a Jupyter notebook that pulls hourly ozone data from the EPA's public AQS API and saves it to a CSV file. Use only Python's built-in libraries, no extra installs. Requirements:*
+> 1. *Read my email and API key from a text file called `aqs_credentials.txt` sitting in the same folder — line 1 is my email, line 2 is my key. Don't put my key directly in the notebook.*
+> 2. *Loop over these states: California (06), Texas (48), New York (36), Illinois (17), Pennsylvania (42), Florida (12)*
+> 3. *For each state, request ozone (param 44201) for all of 2023 from `https://aqs.epa.gov/data/api/sampleData/byState`*
+> 4. *Include a `TEST_MODE` switch that, when on, only pulls one state and one week, so I can confirm everything works before running the full year across all six states*
+> 5. *Print a readable progress message for each state, and a clear error message if a request fails (e.g. bad credentials)*
+> 6. *Save everything into one CSV file called `aqs_ozone_2023.csv`, and print the total row count at the end*
 >
 > *Explain what each part does in plain language, like I've never coded before."*
 
 ### 3. What you should get back
 
-A reference version, matching the same request shape and parameters used above:
+A reference version, matching the same request shape and safety features described above:
 
 ```python
+"""
+Downloads hourly ozone (param 44201) sample data for 2023 from the EPA's
+AQS API for a list of states, and saves all of it into one CSV file.
+
+Reads your email and API key from a file called aqs_credentials.txt,
+which must sit in the same folder as this notebook and contain exactly
+two lines:
+    your_email@example.com
+    YOUR-API-KEY-HERE
+"""
+
 import csv
 import json
-import os
 import time
+import urllib.error
+import urllib.parse
 import urllib.request
 
-EMAIL = os.environ["AQS_EMAIL"]
-KEY = os.environ["AQS_KEY"]
+CREDENTIALS_FILE = "aqs_credentials.txt"
 
-PARAM = "44201"  # Ozone
-YEAR = "2023"
-STATES = ["06", "48", "36", "17", "42", "12"]  # CA, TX, NY, IL, PA, FL
 
-OUTPUT_FILE = "aqs_ozone_2023.csv"
+def load_credentials():
+    with open(CREDENTIALS_FILE, "r", encoding="utf-8") as file:
+        lines = [line.strip() for line in file if line.strip()]
 
-writer = None
-total_rows = 0
-
-with open(OUTPUT_FILE, "w", newline="") as out:
-    for state in STATES:
-        url = (
-            "https://aqs.epa.gov/data/api/sampleData/byState"
-            f"?email={EMAIL}&key={KEY}&param={PARAM}"
-            f"&bdate={YEAR}0101&edate={YEAR}1231&state={state}"
+    if len(lines) < 2:
+        raise SystemExit(
+            f"'{CREDENTIALS_FILE}' should have two lines: your email, "
+            "then your API key. Please check the file and try again."
         )
-        print(f"Requesting state {state}...")
+
+    return lines[0], lines[1]
+
+
+EMAIL, API_KEY = load_credentials()
+
+# Set this to True for a quick test (one state, one week), or False to pull
+# the full request (all six states, all of 2023). Always test with True
+# first to confirm your credentials and setup work before running the
+# full, much slower pull.
+TEST_MODE = True
+
+BASE_URL = "https://aqs.epa.gov/data/api/sampleData/byState"
+OUTPUT_FILE = "aqs_ozone_2023.csv"
+PARAM = "44201"  # ozone
+BDATE = "20230101"
+
+# All six states, with human-readable names for the print-outs.
+ALL_STATES = [
+    ("06", "California"),
+    ("48", "Texas"),
+    ("36", "New York"),
+    ("17", "Illinois"),
+    ("42", "Pennsylvania"),
+    ("12", "Florida"),
+]
+
+if TEST_MODE:
+    EDATE = "20230107"  # just the first week of January
+    STATES = ALL_STATES[:1]  # just California, to keep the test fast
+else:
+    EDATE = "20231231"  # the full year
+    STATES = ALL_STATES
+
+PAUSE_SECONDS = 5  # how long to wait between requests
+
+
+def fetch_state_rows(state_code):
+    # Build the query string (everything after the "?" in the URL) from a
+    # dictionary of parameters, so we don't have to hand-assemble it.
+    query = {
+        "email": EMAIL,
+        "key": API_KEY,
+        "param": PARAM,
+        "bdate": BDATE,
+        "edate": EDATE,
+        "state": state_code,
+    }
+    url = f"{BASE_URL}?{urllib.parse.urlencode(query)}"
+
+    try:
         with urllib.request.urlopen(url) as response:
-            payload = json.loads(response.read().decode())
+            payload = json.loads(response.read())
+    except urllib.error.HTTPError as error:
+        # The AQS API usually explains what went wrong in the response
+        # body (bad email/key, bad parameter, etc.), so show that instead
+        # of just the generic "400 Bad Request".
+        details = error.read().decode("utf-8", errors="replace")
+        raise SystemExit(
+            f"Request for state {state_code} failed "
+            f"({error.code} {error.reason}):\n{details}"
+        )
 
-        rows = payload.get("Data", [])
-        print(f"  {len(rows)} rows for state {state}")
+    # The AQS API wraps the actual rows inside a "Data" field.
+    return payload.get("Data", [])
 
-        if rows:
-            if writer is None:
-                writer = csv.DictWriter(out, fieldnames=list(rows[0].keys()))
-                writer.writeheader()
-            writer.writerows(rows)
-            total_rows += len(rows)
 
-        time.sleep(5)  # be polite to a shared public API
+def main():
+    total_rows = 0
+    writer = None
+    csv_file = open(OUTPUT_FILE, "w", newline="", encoding="utf-8")
 
-print(f"\nDone. {total_rows} total rows saved to {OUTPUT_FILE}")
+    try:
+        for index, (state_code, state_name) in enumerate(STATES):
+            print(f"Requesting {state_name} ({state_code})... this can take a minute or more.")
+            rows = fetch_state_rows(state_code)
+            print(f"{state_name} ({state_code}): {len(rows)} rows")
+
+            if rows:
+                # Create the CSV header the first time we see any real data,
+                # using whatever fields the API happens to return.
+                if writer is None:
+                    fieldnames = list(rows[0].keys())
+                    writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+                    writer.writeheader()
+
+                writer.writerows(rows)
+                total_rows += len(rows)
+
+            # Pause between requests, but not after the very last one.
+            if index < len(STATES) - 1:
+                time.sleep(PAUSE_SECONDS)
+    finally:
+        csv_file.close()
+
+    print(f"\nTotal rows saved: {total_rows}")
+
+
+main()
 ```
+
+AQS limits each request to at most one calendar year of data, which is why the loop goes state-by-state rather than requesting multiple years at once. Six states of hourly ozone for a year is already a meaningfully large pull; add more state codes to `ALL_STATES` (or a second `PARAM`, e.g. `88101` for PM2.5) to push it further toward the GB range. With `TEST_MODE = False`, expect the run to take several minutes, not seconds; that's normal.
+
+### 4. Launch a Jupyter session via TAP
+
+Follow [Launching an idev Session on the TAP Analysis Portal](idev-tap-portal.html), with one difference: at the application-selection step, choose **Jupyter** rather than plain `idev` if the portal offers it as a separate option. It runs on the same `idev` mechanism underneath, but drops you straight into a JupyterLab interface in your browser instead of a bare terminal, no command line involved from here on.
 
 <div class="card">
 
-I verified the AQS API is live and confirmed its exact parameter names and signup mechanism against the real service. I did not run this specific script end-to-end (that requires a real API key tied to an email, which isn't something to generate on your behalf) — pilot it yourself before handing it to a room of non-coders, the same way you'd check any new exercise.
+Portal option labels can vary by TACC release; if you only see `idev` listed and no separate Jupyter option, check with your facilitator before falling back to a terminal-based session.
 
 </div>
 
-AQS limits each request to at most one calendar year of data, which is why the script loops state-by-state rather than requesting multiple years at once. Six states of hourly ozone for a year is already a meaningfully large pull; add more state codes to the list (or add a second `PARAM`, e.g. `88101` for PM2.5) to push it further toward the GB range. Expect the run to take a few minutes, not seconds; that's normal.
+### 5. Create your credentials file
 
-### 4. Launch an idev session and paste in the script
+Still no terminal: in JupyterLab's file browser (the panel on the left), click **New → Text File**, name it `aqs_credentials.txt`, and enter two lines:
 
-1. Follow [Launching an idev Session on the TAP Analysis Portal](idev-tap-portal.html) to get a terminal running on a Vista compute node.
-2. Once connected, check Python is available: `python3 --version`. If it's not found, try `module load python3` (module names can vary by system; check `module avail python` or ask your facilitator if that doesn't work).
-3. Set your API credentials as environment variables, replacing the placeholders with your real values:
-   ```bash
-   export AQS_EMAIL="your_email@example.edu"
-   export AQS_KEY="your_actual_key"
-   ```
-4. Open a terminal text editor and create the script file:
-   ```bash
-   nano extract_aqs_data.py
-   ```
-5. Paste in the script from Step 3 (Claude's version, or the reference one above), then save and exit (`Ctrl+O`, Enter, `Ctrl+X` in nano).
-
-### 5. Run it and confirm, on the cluster
-
-```bash
-python3 extract_aqs_data.py
+```
+your_email@example.edu
+your_actual_api_key
 ```
 
-Once it finishes, confirm the file landed and check its size:
+Save it (Ctrl+S / Cmd+S). Keeping the key in its own file, rather than in the notebook, means it never ends up in a cell's saved output if you share the notebook later.
 
-```bash
-ls -lh aqs_ozone_2023.csv
-wc -l aqs_ozone_2023.csv
-```
+### 6. Create the notebook and test it
 
-`wc -l` should roughly match the total row count the script printed, plus 1 for the header row. `ls -lh` shows the file size in human-readable form (K/M/G); with six states of hourly ozone for a full year, expect this well into the hundreds of MB, and into GB territory if you extended the state list or added a second pollutant. That confirms the extraction: the data made it onto the cluster, at a scale that wouldn't have been practical to pull to your laptop first.
+1. In JupyterLab, click **New → Notebook**, and paste the script from Step 3 (Claude's version, or the reference one above) into the first cell.
+2. Leave `TEST_MODE = True` and click **Run** (▶) on the cell.
+3. Confirm you see one state's worth of rows print out, ending with a `Total rows saved` line, and no authentication error. If you do see an authentication error, re-check Step 1's email verification before anything else.
+
+### 7. Run the full pull and confirm
+
+Once the test succeeds, change `TEST_MODE = True` to `TEST_MODE = False` in the cell and click **Run** again. This time it loops all six states and will take a few minutes.
+
+When it finishes, confirm two things without ever opening a terminal:
+
+- The cell's own output ends with a `Total rows saved: N` line.
+- In the JupyterLab file browser, `aqs_ozone_2023.csv` appears with a file size shown right next to it; with six states of hourly ozone for a full year, expect this well into the hundreds of MB, and into GB territory if you extended the state list or added a second pollutant.
+
+That's the confirmation: the data made it onto the cluster, at a scale that wouldn't have been practical to pull to your laptop first.
 
 ### Part 2 checklist
 
 <ul class="checklist">
-<li>AQS API key received by email</li>
-<li>Extraction script written (by you and Claude, or copied from above)</li>
-<li>idev session launched via the TAP Analysis Portal</li>
-<li>Environment variables set, script pasted into a file, and run on the compute node</li>
-<li><code>aqs_ozone_2023.csv</code> exists on the cluster; file size and row count confirmed</li>
+<li>AQS API key received by email, and the verification email confirmed</li>
+<li>Notebook written (by you and Claude, or copied from above)</li>
+<li>Jupyter session launched via the TAP Analysis Portal</li>
+<li><code>aqs_credentials.txt</code> created via the JupyterLab file browser (not typed into the notebook)</li>
+<li>Test run (<code>TEST_MODE = True</code>) succeeded with no authentication errors</li>
+<li>Full run (<code>TEST_MODE = False</code>) complete; <code>aqs_ozone_2023.csv</code> visible in the file browser with a matching row count and file size</li>
 </ul>
 
 ---
