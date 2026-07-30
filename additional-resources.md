@@ -19,6 +19,7 @@ NAIRR provides access to compute, cloud, and AI resources for qualifying researc
 - [Sample assignments; starter ideas by discipline](resources/sample-assignments.html)
 - [Launching an idev session on the TAP Analysis Portal](resources/idev-tap-portal.html)
 - [Connecting to Vista: an SSH guide for every platform](resources/connecting-to-vista-ssh.html)
+- [Accessing RStudio on the Morehouse Supercomputing Facility](resources/accessing-rstudio-tacc.html)
 
 ## Template repos
 
