@@ -12,7 +12,7 @@ title: Day 4
 |:---|:---|
 | 10:00 – 10:15 AM | Daily agenda review |
 | 10:15 – 11:30 AM | Case study example |
-| 11:30 AM – 12:30 PM | FAQs with NotebookLM |
+| 11:30 AM – 12:30 PM | FAQs with Gemini Notebook |
 | 12:30 – 1:30 PM | Lunch |
 | 1:30 – 2:00 PM | Draft your exam scaffold |
 | 2:00 – 2:30 PM | Setting up student allocations: Morehouse Supercomputing Facility access language for your syllabus |
