@@ -13,11 +13,12 @@ title: Day 5
 | 10:00 – 10:15 AM | Daily agenda review |
 | 10:15 – 11:00 AM | From output to classroom-ready materials: Push and commit your course to Github, publish your course site (optional), set up office hours via Calendly or Teams (optional), export to Canvas & Blackboard (optional), and reuse this template for your next course or cohort |
 | 11:15 AM – 12:00 PM | Building your 90-day implementation plan |
+| 12:15 APM – 12:30 PM | Group Picture|
 | 12:30 – 1:30 PM | Lunch |
-| 1:30 – 2:00 PM | Using NAIRR resources beyond this week: continued access & community of practice |
-| 2:00 – 2:30 PM | Program evaluation, survey receive via email from Dr. Mi'Kayla Newell |
-| 2:30 – 2:55 PM | Before program ends: final checklist review |
-| 2:55 – 3:00 PM | Closing remarks & group picture |
+| 1:30 – 2:30 PM | Office Hours |
+| 2:45 – 3:00 PM | Program evaluation, survey distributed via email from Dr. Mi'Kayla Newell |
+
+
 | Evening | [Beach day](#evening) |
 
 ## What you'll build today
