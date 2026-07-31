@@ -97,6 +97,10 @@ CloudBank is especially valuable for NSF-aligned projects needing AWS, Azure, or
 - [Connecting to Vista: an SSH guide for every platform](resources/connecting-to-vista-ssh.html)
 - [Accessing RStudio on the Morehouse Supercomputing Facility](resources/accessing-rstudio-tacc.html)
 
+## VISTA Documentation
+
+- [Vista User Guide: Running Jobs](https://docs.tacc.utexas.edu/hpc/vista/#running)
+
 ## Slides
 
 - [Full Program Overview](assets/slides/full-program-deck.pdf)
