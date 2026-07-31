@@ -17,8 +17,6 @@ title: Day 5
 | 12:30 – 1:30 PM | Lunch |
 | 1:30 – 2:30 PM | Office Hours |
 | 2:45 – 3:00 PM | Program evaluation, survey distributed via email from Dr. Mi'Kayla Newell |
-
-
 | Evening | [Beach day](#evening) |
 
 ## What you'll build today
