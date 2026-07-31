@@ -21,6 +21,12 @@ NAIRR provides access to compute, cloud, and AI resources for qualifying researc
 - [Connecting to Vista: an SSH guide for every platform](resources/connecting-to-vista-ssh.html)
 - [Accessing RStudio on the Morehouse Supercomputing Facility](resources/accessing-rstudio-tacc.html)
 
+## Slides
+
+- [Full Program Overview](assets/slides/full-program-deck.pdf)
+- [Submitting, Monitoring & Canceling Jobs on TACC](assets/slides/how-to-submit-and-cancel-jobs-on-tacc.pdf)
+- [TAP vs Tapis](assets/slides/tap-vs-tapis.pdf)
+
 ## Template repos
 
 The two repos every participant builds their course in this week:
